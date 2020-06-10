@@ -1,6 +1,8 @@
-import colors from 'vuetify/es5/util/colors'
+// import colors from 'vuetify/es5/util/colors'
+const colors = require('vuetify/es5/util/colors').default
 
-export default {
+// export default {
+module.exports = {
   mode: 'universal',
   /*
   ** Headers of the page
@@ -11,11 +13,20 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { 'http-equiv': 'X-UA-Compatible', content: 'IE=Edge,chrome=1' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: `https://api.map.baidu.com/api?v=2.0&ak=qe0TkeKulWIs0yc7rM69N7UX5zivQK06`, body: true },
+      { src: 'http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js', body: true },
     ]
+  },
+  server: {
+    port: 3001, // default: 3000
+    host: '127.0.0.1' // default: localhost
   },
   /*
   ** Customize the progress-bar color
@@ -30,6 +41,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: "~plugins/map.js", ssr: false },
   ],
   /*
   ** Nuxt.js dev-modules

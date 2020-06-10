@@ -1,9 +1,13 @@
 <template>
-  <div>
-    <Header/>
-		<nuxt/>
-    <Footer/>
-	</div>
+  <v-app>
+    <div>
+      <Header/>
+      <v-content>
+        <nuxt />
+      </v-content>
+      <Footer/>
+    </div>
+  </v-app>
 </template>
 
 <script>
