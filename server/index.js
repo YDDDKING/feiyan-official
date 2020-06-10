@@ -32,13 +32,14 @@ app.use(logger())
 
 async function start () {
   // Instantiate nuxt.js
-  console.log(__dirname);
+  console.log(__dirname, '__dirname');
+  console.log(process.env.PORT, 'process.env.PORT')
   
   
   const nuxt = new Nuxt(config)
 
   const {
-    host = process.env.HOST || '127.0.0.1',
+    host = process.env.HOST ,
     port = process.env.PORT || 3001
   } = nuxt.options.server
 

@@ -99,6 +99,12 @@ export default {
         return
       }
 
+      if (this.email.length === 0) {
+        this.text = '请输入您的邮箱'
+        this.snackbar = true
+        return
+      }
+
       // if(this.messageEmail.length === 0 && this.realName.length === 0) {
       //   this.text = '信息不能为空'
       //   this.snackbar = true
@@ -127,8 +133,7 @@ export default {
       this.$emit('closeDialog')
       
       http.post('/addMessage', model).then(res => {
-        
-        // console.log(res)
+s        // console.log(res)
         // if (res.data.respCode === 0) {
         //   this.realName = ''
         //   this.email = ''

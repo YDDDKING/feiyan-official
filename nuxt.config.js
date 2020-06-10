@@ -28,6 +28,10 @@ module.exports = {
     port: 3001, // default: 3000
     host: '127.0.0.1' // default: localhost
   },
+
+  router: {
+    middleware: ['browserVersion']
+  },
   /*
   ** Customize the progress-bar color
   */

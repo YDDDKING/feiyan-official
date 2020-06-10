@@ -174,7 +174,6 @@ export default {
       }
 
       .familyUseOneRightTitle {
-        font-family: PMZD;
         color:#fff;
         font-size: 40px;
         margin:15px 0px;

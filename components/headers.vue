@@ -78,7 +78,7 @@
       </div>
     </div>
     <!-- 温馨提示弹窗 -->
-    <!-- <v-dialog
+    <v-dialog
       v-model="tipsDialog"
       width="700px"
     >
@@ -109,13 +109,13 @@
             <v-divider/>
             <v-stepper-items>
               <v-stepper-content :key="'1'" :step="'1'">
-                <img src="@/assets/step1.png" width="100%"/>
+                <img src="@/assets/温馨提示图片x3/帮助01.svg" width="100%"/>
               </v-stepper-content>
               <v-stepper-content :key="'2'" :step="'2'">
-                <img src="@/assets/step2.png" width="100%"/>
+                <img src="@/assets/温馨提示图片x3/帮助02.svg" width="100%"/>
               </v-stepper-content>
               <v-stepper-content :key="'3'" :step="'3'">
-                <img src="@/assets/step3.png" width="100%"/>
+                <img src="@/assets/温馨提示图片x3/帮助03.svg" width="100%"/>
               </v-stepper-content>
             </v-stepper-items>
           </v-stepper>
@@ -124,7 +124,7 @@
           <v-btn color="primary" @click="goDownload">前往帮助中心</v-btn>
         </v-card-actions>
       </v-card>
-    </v-dialog> -->
+    </v-dialog>
   </div>
 </template>
 
@@ -134,7 +134,8 @@ export default {
   data () {
     return {
       items: ['家庭应用', '校园应用'],
-      tab: 0
+      tab: 0,
+      tipsDialog: false,
     }
   },
   methods: {

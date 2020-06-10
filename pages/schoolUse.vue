@@ -158,7 +158,6 @@ export default {
       }
 
       .schoolUseOneRightTitle {
-        font-family: PMZD;
         color:#fff;
         font-size: 40px;
         margin:15px 0px;
