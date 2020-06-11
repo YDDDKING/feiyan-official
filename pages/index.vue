@@ -168,7 +168,7 @@
         </div>
       </div>
       <!-- 第六部分结束 -->
-    </div>
+  </div>
 </template>
 
 
@@ -247,10 +247,10 @@ export default {
 </script>
 
 
-// <style src='../common/font.css'></style>
+<style src='../common/font.css'></style>
+
 <style lang="less" scoped>
 @import '../common/font.css';
-
 
 .indexOne {
   height: 600px;

@@ -7,10 +7,6 @@ const cors = require('koa2-cors')
 const { Nuxt, Builder } = require('nuxt')
 const static = require('koa-static')
 
-// const banner = require('./interface/banner')
-// const dynamic = require('./interface/dynamic')
-// const message = require('./interface/message')
-// const manage = require('./interface/manage')
 const app = new Koa()
 
 console.log('测试执行');
@@ -19,6 +15,7 @@ console.log('测试执行');
 // Import and Set Nuxt.js options
 const config = require('../nuxt.config.js')
 config.dev = app.env !== 'production'
+
 
 app.use(cors())
 app.use(static(__dirname, '../static'))
@@ -32,15 +29,11 @@ app.use(logger())
 
 async function start () {
   // Instantiate nuxt.js
-  console.log(__dirname, '__dirname');
-  console.log(process.env.PORT, 'process.env.PORT')
-  
-  
   const nuxt = new Nuxt(config)
 
   const {
-    host = process.env.HOST ,
-    port = process.env.PORT || 3001
+    host,
+    port
   } = nuxt.options.server
 
   
@@ -52,11 +45,6 @@ async function start () {
   } else {
     await nuxt.ready()
   }
-
-  // app.use(banner.routes()).use(banner.allowedMethods())
-  // app.use(dynamic.routes()).use(dynamic.allowedMethods())
-  // app.use(message.routes()).use(message.allowedMethods())
-  // app.use(manage.routes()).use(manage.allowedMethods())
 
   app.use((ctx) => {
     ctx.status = 200

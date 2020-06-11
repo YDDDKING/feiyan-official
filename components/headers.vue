@@ -129,16 +129,31 @@
 </template>
 
 <script>
+import axios from 'axios'
 export default {
+  async mounted  () {
+    const x = await axios.get('http://127.0.0.1:3001/dynamic')
+    console.log(x, 45454554);
+    
+  },
   
   data () {
     return {
       items: ['家庭应用', '校园应用'],
       tab: 0,
       tipsDialog: false,
+      st: "1",
     }
   },
   methods: {
+    goDownload () {
+      if (this.$route.name === 'download') {
+        this.tipsDialog = false
+      } else {
+        this.$router.push({name: 'download'})
+        this.tipsDialog = false
+      }
+    },
     openRK (status) {
       // console.log(this.IEVersion())
       if (this.IEVersion() === -1) {
