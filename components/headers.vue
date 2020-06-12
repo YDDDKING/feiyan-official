@@ -131,11 +131,6 @@
 <script>
 import axios from 'axios'
 export default {
-  async mounted  () {
-    const x = await axios.get('http://127.0.0.1:3001/dynamic')
-    console.log(x, 45454554);
-    
-  },
   
   data () {
     return {
@@ -158,9 +153,9 @@ export default {
       // console.log(this.IEVersion())
       if (this.IEVersion() === -1) {
         if (status === 1) {
-          window.open('http://teacher.feiyanmath.com')
+          window.open('http://mt.feiyanmath.com')
         } else {
-          window.open('http://student.feiyanmath.com')
+          window.open('http://ms.feiyanmath.com')
         }
       } else {
         this.tipsDialog = true

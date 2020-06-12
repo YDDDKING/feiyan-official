@@ -32,13 +32,13 @@
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#fc7aa3"><img src="../assets/icon3.png"/></div>
-          <div class="familyUseTwoContentIconTitle">实时检验并巩固学习成果</div>
-          <div class="familyUseTwoContentIconSmallTitle">实时检验并巩固学习成果</div>
+          <div class="familyUseTwoContentIconTitle">错题分类归纳</div>
+          <div class="familyUseTwoContentIconSmallTitle">复盘学习，温故知新</div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#ffb129"><img src="../assets/icon4.png"/></div>
-          <div class="familyUseTwoContentIconTitle">实时检验并巩固学习成果</div>
-          <div class="familyUseTwoContentIconSmallTitle">实时检验并巩固学习成果</div>
+          <div class="familyUseTwoContentIconTitle">测评精准推送</div>
+          <div class="familyUseTwoContentIconSmallTitle">实行进行知识点定级定档</div>
         </div>
       </div>
     </div>
@@ -73,7 +73,7 @@
             <div>
               <div style="text-align:right;margin-right:30px;margin-top:20px">
                 <v-btn :outlined='showTry' color='blue' depressed style="color:#fff" width="80px" @click="showOther = true, showTry = false">原题</v-btn>
-                <v-btn :outlined='showOther' color='blue' style="color:#fff" width="80px" @click="showOther = false, showTry = true">试一试</v-btn>
+                <v-btn :outlined='showOther' color='blue' depressed style="color:#fff" width="80px" @click="showOther = false, showTry = true">试一试</v-btn>
               </div>
               <img src="../assets/familyCutPic/原题.svg" width="100%" v-if="showOther"/>
               <img src="../assets/familyCutPic/试一试.svg" width="100%" v-if="showTry"/>

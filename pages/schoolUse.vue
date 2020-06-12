@@ -74,7 +74,7 @@
               <img src="../assets/schoolCutPic/校园_学生统计.svg" style="border-radius:20px;cursor:pointer"  @click="showHelpPicThree = true"/>
               <img src="../assets/schoolCutPic/校园_学生统计-大.svg" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicThree" @click="showHelpPicThree = false"/>
             </div>
-            <div class="schoolUseThreeContentBottomItemTitle">P6学生统计</div>
+            <div class="schoolUseThreeContentBottomItemTitle">学生统计</div>
             <div class="schoolUseThreeContentBottomItemGang"></div>
           </div>
         </div>

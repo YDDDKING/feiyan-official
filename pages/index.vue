@@ -90,7 +90,7 @@
                   :src="item.src"
                   style="height:90%"
                 >
-                  <img :src="item.src" style="height:90%;width:100%;border-radius:20px">
+                  <!-- <img :src="item.src" style="height:90%;width:100%;border-radius:20px"> -->
                 </v-carousel-item>
               </v-carousel>
             </div>
@@ -206,9 +206,9 @@ export default {
     openRK (status) {
       if (this.IEVersion() === -1) {
         if (status === 1) {
-          window.open('http://teacher.feiyanmath.com')
+          window.open('http://mt.feiyanmath.com')
         } else {
-          window.open('http://student.feiyanmath.com')
+          window.open('http://ms.feiyanmath.com')
         }
       } else {
         this.tipsDialog = true
@@ -362,12 +362,13 @@ export default {
   .indexThreeContent {
     width:1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     .indexThreeContentImgOne {
+      width: 520px;
       border-radius: 20px;
-      height:400px;
+      height:360px;
       position: relative;
     }
     .indexThreeContentImgOne:hover {
@@ -375,8 +376,9 @@ export default {
     }
 
     .indexThreeContentImgTwo {
+      width: 520px;
       border-radius: 20px;
-      height:400px;
+      height:360px;
       position: relative;
     }
     .indexThreeContentImgTwo:hover {
@@ -597,6 +599,7 @@ export default {
       }
 
       .indexSixthLeftContent {
+        width: 700px;
         color:#fff;
         font-size: 20px;
       }

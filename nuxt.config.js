@@ -13,7 +13,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { hid: 'description', name: 'description', content: '教育、科技、刷题' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=Edge,chrome=1' }
     ],
     link: [
@@ -26,7 +26,7 @@ module.exports = {
   },
   server: {
     port: 3001, // default: 3000
-    host: '127.0.0.1' // default: localhost
+    host: '10.10.100.225' // default: localhost
   },
 
   router: {
@@ -64,20 +64,20 @@ module.exports = {
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
-  axios: {
-    proxy: true, // 表示开启代理
-    prefix: '/api', // 表示给请求url加个前缀 /api
-    credentials: true // 表示跨域请求时是否需要使用凭证
-  },
-  proxy: {
-    '/api': { 
-      target: 'https://www.feiyanmath.com', // 目标接口域名
-      pathRewrite: {
-        '^/api': '/', // 把 /api 替换成 /
-        changeOrigin: true // 表示是否跨域
-      }    
-    }
-  },
+  // axios: {
+  //   proxy: true, // 表示开启代理
+  //   prefix: '/api', // 表示给请求url加个前缀 /api
+  //   credentials: true // 表示跨域请求时是否需要使用凭证
+  // },
+  // proxy: {
+  //   '/api': { 
+  //     target: 'https://www.feiyanmath.com', // 目标接口域名
+  //     pathRewrite: {
+  //       '^/api': '/', // 把 /api 替换成 /
+  //       changeOrigin: true // 表示是否跨域
+  //     }    
+  //   }
+  // },
   /*
   ** vuetify module configuration
   ** https://github.com/nuxt-community/vuetify-module
