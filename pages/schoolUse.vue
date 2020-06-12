@@ -190,8 +190,8 @@ export default {
       align-items: center;
 
       .schoolUseTwoContentIconTop {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         background: #00e097;
         display: flex;
         justify-content: center;
@@ -199,20 +199,20 @@ export default {
         border-radius: 50%;
 
         img {
-          width: 100px;
+          width: 88px;
         }
       }
 
       .schoolUseTwoContentIconTitle {
         margin:30px 0px 10px;
         color:rgba(33, 33, 33, 1);
-        font-size: 26px;
+        font-size: 20px;
         font-weight: 600;
       }
 
       .schoolUseTwoContentIconSmallTitle {
         color: rgba(165, 177, 189, 1);
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
@@ -280,6 +280,7 @@ export default {
           border-radius: 10px;
 
           position: absolute;
+          left: 0px;
           top: -53px;
         }
 

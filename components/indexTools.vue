@@ -41,7 +41,7 @@
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#FFD629;"><img src="../assets/icon6.png"/></div>
         <div class="indexToolItemTitle">试卷智能批改</div>
-        <div class="indexToolItemSmallTitle">智能选卷，适配主观 题型自动批改</div>
+        <div class="indexToolItemSmallTitle">智能选卷，适配主观</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#FF8216;"><img src="../assets/icon7.png"/></div>
@@ -139,13 +139,14 @@ export default {
       
       .indexToolItemTitle {
         color:rgba(33, 33, 33, 1);
-        font-size:26px;
+        font-size:20px;
         font-weight: 600;
+        margin-top:20px;
       }
 
       .indexToolItemSmallTitle {
-        font-size: 20px;
-        padding:0px 30px;
+        font-size: 16px;
+        padding:10px 30px;
         color: #A5B1BD;
         text-align: center;
       }

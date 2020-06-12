@@ -13,7 +13,8 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '教育、科技、刷题' },
+      { name: "keywords", content: "飞燕数学、初中数学、凤腾阁、数学辅导、数学工具、教育、科技、刷题" },
+      { hid: 'description', name: 'description', content: '飞燕数学是一款集智能派卷、自动批改、互动讲解、个性测评等功能为一体的新型交互式数学学习工具' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=Edge,chrome=1' }
     ],
     link: [
@@ -21,12 +22,12 @@ module.exports = {
     ],
     script: [
       { src: `https://api.map.baidu.com/api?v=2.0&ak=qe0TkeKulWIs0yc7rM69N7UX5zivQK06`, body: true },
-      { src: 'http://7xjfim.com2.z0.glb.qiniucdn.com/Iva.js', body: true },
     ]
   },
   server: {
     port: 3001, // default: 3000
     host: '10.10.100.225' // default: localhost
+    // host: '127.0.0.1'
   },
 
   router: {
@@ -46,6 +47,7 @@ module.exports = {
   */
   plugins: [
     { src: "~plugins/map.js", ssr: false },
+    { src: '@/plugins/poly' }
   ],
   /*
   ** Nuxt.js dev-modules

@@ -53,8 +53,8 @@
 
         <div class="familyUseThreeContentBottom">
           <div class="familyUseThreeContentBottomOne">
-            <div class="familyUseThreeContentBottomOneTitle"><div><img src="../assets/familyUse3.png"/></div>做错题目，查看智能引导启发思考</div>
-            <v-carousel hide-delimiters height="402px" style="border-radius:20px;border: 1px solid rgba(34, 53, 160, 1);">
+            <div class="familyUseThreeContentBottomOneTitle"><div><img src="../assets/familyUse3.png"/></div>交互讲解，启发思考</div>
+            <v-carousel hide-delimiters height="260px" style="border-radius:20px;border: 1px solid rgba(34, 53, 160, 1);">
              <v-carousel-item
                 v-for="(item,i) in items"
                 :key="i"
@@ -68,15 +68,10 @@
           <div style="text-align:center;margin:20px 0px;"><img src="../assets/familyUse2.png"/></div>
 
           <div class="familyUseThreeContentBottomTwo">
-            <div class="familyUseThreeContentBottomTwoTitle"><div><img src="../assets/familyUse3.png"/></div>掌握思路，立即进行同类题目二次尝试</div>
+            <div class="familyUseThreeContentBottomTwoTitle"><div><img src="../assets/familyUse3.png"/></div>掌握思路，同类尝试</div>
 
             <div>
-              <div style="text-align:right;margin-right:30px;margin-top:20px">
-                <v-btn :outlined='showTry' color='blue' depressed style="color:#fff" width="80px" @click="showOther = true, showTry = false">原题</v-btn>
-                <v-btn :outlined='showOther' color='blue' depressed style="color:#fff" width="80px" @click="showOther = false, showTry = true">试一试</v-btn>
-              </div>
-              <img src="../assets/familyCutPic/原题.svg" width="100%" v-if="showOther"/>
-              <img src="../assets/familyCutPic/试一试.svg" width="100%" v-if="showTry"/>
+              <img src="../assets/familyCutPic/家庭页_原题+试一试.svg" width="100%" style="border-radius:20px"/>
             </div>
           </div>
 
@@ -85,10 +80,10 @@
           <div class="familyUseThreeContentBottomThree">
             <div class="familyUseThreeContentBottomThreeTitle">
               <img src="../assets/familyUse3.png"/>
-              归纳错题，对每次答题过程记录分析
+              归纳错题，温故知新
             </div>
 
-            <img src="../assets/familyCutPic/错题.svg" width="100%" style="border-radius:5px"/>
+            <img src="../assets/familyCutPic/错题.svg" width="100%" style="border-radius:20px"/>
           </div>
         </div>
       </div>
@@ -103,7 +98,7 @@
         </div>
 
         <div class="familyUseForthContentBottom">
-          <div><img src="../assets/familyCutPic/智能测评整体.svg"/></div>
+          <div><img src="../assets/familyCutPic/整体.svg"/></div>
           <div style="position:absolute;top:55px;left:161px">选择题目</div>
           <div style="position:absolute;top:55px;left:548px">生成测评卷</div>
           <div style="position:absolute;top:55px;left:979px">测评报告</div>
@@ -121,22 +116,22 @@ export default {
       showOther:true,
       items: [
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/b439298fad974fc08b044e5a891abf62.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/d94c0f51b5444b23beb2044bc114a652.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/18b8da01bb85484582e2e58322ecd5d1.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/04e5c75afcf44b50a4ecc8abfbdd5a93.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/cde38240f013481bb194bb1bb03af0eb.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/54e620e01a5a46fd831615cdfdf3ce48.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/e560e3122f9748da96d809e8135c0885.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/2516485d9ed441648ebba24df06d0955.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/9c9b9b4e21ef469db9b04c1b7c2ee1d0.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/0f8cd890fe694c5781bf7e003ff7a56c.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/fc8010131abf4f3d843d3cf1631b57d6.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/6f5e7808273c46b5846e841a20dec805.png',
         },
       ],
     }
@@ -206,8 +201,8 @@ export default {
       align-items: center;
 
       .familyUseTwoContentIconTop {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
         background: #00cafd;
         display: flex;
         justify-content: center;
@@ -215,20 +210,20 @@ export default {
         border-radius: 50%;
 
         img {
-          width: 100px;
+          width: 88px;
         }
       }
 
       .familyUseTwoContentIconTitle {
         margin:30px 0px 10px;
         color:rgba(33, 33, 33, 1);
-        font-size: 26px;
+        font-size: 20px;
         font-weight: 600;
       }
 
       .familyUseTwoContentIconSmallTitle {
         color: rgba(165, 177, 189, 1);
-        font-size: 20px;
+        font-size: 16px;
       }
     }
   }
@@ -242,7 +237,7 @@ export default {
   justify-content: center;
 
   .familyUseThreeContent {
-    width: 1200px;
+    width: 1000px;
     background: url('../assets/familyUse1.png') no-repeat center 30px;
     display: flex;
     flex-direction: column;
@@ -284,7 +279,7 @@ export default {
         
         .familyUseThreeContentBottomOneTitle {
           display: flex;
-          width: 500px;
+          width: 300px;
           height: 50px;
           background: #fff;
           border-radius: 10px;
@@ -297,13 +292,13 @@ export default {
           font-weight: 600;
           position: relative;
           top: 25px;
-          left: 353px;
+          left: 349px;
           z-index: 10;
 
           img {
             position: absolute;
             top:10px;
-            left:70px;
+            left:31px;
           }
         }
       }
@@ -318,7 +313,7 @@ export default {
 
         .familyUseThreeContentBottomTwoTitle {
           display: flex;
-          width: 500px;
+          width: 300px;
           height: 50px;
           background: #fff;
           border-radius: 10px;
@@ -331,13 +326,13 @@ export default {
           font-weight: 600;
           position: absolute;
           top: -26px;
-          left: 353px;
+          left: 349px;
           z-index: 10;
 
           img {
             position: absolute;
             top:10px;
-            left:51px;
+            left:31px;
           }
         }
       }
@@ -352,7 +347,7 @@ export default {
 
         .familyUseThreeContentBottomThreeTitle {
           display: flex;
-          width: 500px;
+          width: 300px;
           height: 50px;
           background: #fff;
           border-radius: 10px;
@@ -365,13 +360,13 @@ export default {
           font-weight: 600;
           position: absolute;
           top: -26px;
-          left: 353px;
+          left: 349px;
           z-index: 10;
 
           img {
             position: absolute;
             top:10px;
-            left:51px;
+            left:31px;
           }
         }
       }

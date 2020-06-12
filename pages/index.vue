@@ -40,16 +40,16 @@
             <div class="indexThreeContentImgOne">
               <img src="../assets/index8.png" style="height:100%"/>
 
-              <div style="position:absolute;bottom:79px;left:175px;font-size:40px;color:#fff;font-family: PMZD;">家庭应用方案</div>
-              <div style="position:absolute;bottom:44px;left:154px;font-size:20px;color:#fff">辅助学生在家自主完成学习复盘</div>
+              <div style="position:absolute;bottom:79px;left:147px;font-size:40px;color:#fff;font-family: PMZD;">家庭应用方案</div>
+              <div style="position:absolute;bottom:44px;left:119px;font-size:20px;color:#fff">辅助学生在家自主完成学习复盘</div>
             </div>
           </nuxt-link>
           <nuxt-link to="/schoolUse">
             <div class="indexThreeContentImgTwo">
               <img src="../assets/index10.png" style="height:100%"/>
 
-              <div style="position:absolute;bottom:79px;left:175px;font-size:40px;color:#fff;font-family: PMZD;">校园运用方案</div>
-              <div style="position:absolute;bottom:44px;left:154px;font-size:20px;color:#fff">支持老师进行精准高效的教学工作</div>
+              <div style="position:absolute;bottom:79px;left:147px;font-size:40px;color:#fff;font-family: PMZD;">校园运用方案</div>
+              <div style="position:absolute;bottom:44px;left:119px;font-size:20px;color:#fff">支持老师进行精准高效的教学工作</div>
             </div>
           </nuxt-link>
         </div>
@@ -78,7 +78,7 @@
           <div class="indexFifthContentLeft">
             <div class="indexFifthContentLeftTop">
               <div class="indexFifthContentLeftTopBird"><img src="../assets/bird.png"/><span class="indexFifthContentLeftTopBirdText">题目</span></div>
-              <div style="height:240px"><img src="../assets/题目.svg" style="width:100%;height:100%;border-radius:20px"/></div>
+              <div style="height:240px"><img src="../assets/题目.png" style="width:100%;height:100%;border-radius:20px"/></div>
             </div>
 
             <div class="indexFifthContentLeftBottom">
@@ -114,7 +114,7 @@
                 <div class="indexFifthContentRightBottomText">名师对每道试题进行高颗粒度拆解，由人工智能系统对学生进行交互讲解，启发思考，拒绝死记硬背，独创智能辅导</div>
               </div>
 
-              <div class="indexFifthContentRightBottomItem" style="margin-top:45px">
+              <div class="indexFifthContentRightBottomItem" style="margin-top:60px">
                 <div class="indexFifthContentRightBottomCircle">
                   <div class="indexFifthContentRightBottomCircleOne" style="background:#FFE6C0">
                     <div class="indexFifthContentRightBottomCircleTwo" style="background:#F39D18"></div>
@@ -124,7 +124,7 @@
                 <div class="indexFifthContentRightBottomText">高颗粒度的步骤引导，循循善诱，对学生答题过程进行标记分析，定位错因</div>
               </div>
 
-              <div class="indexFifthContentRightBottomItem" style="margin-top:45px">
+              <div class="indexFifthContentRightBottomItem" style="margin-top:60px">
                 <div class="indexFifthContentRightBottomCircle">
                   <div class="indexFifthContentRightBottomCircleOne" style="background:#FFE4E4">
                     <div class="indexFifthContentRightBottomCircleTwo" style="background:#FF4040"></div>
@@ -179,23 +179,23 @@ export default {
     return {
       items: [
         {
-          src:'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/ce9141cb8c4e4f8e962f7cc820581438.svg',
+          src:'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/a293b57609024bf8a3949833d6313107.svg',
         },
         {
-          src:'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/532cb06df0584623a2cb117d1decf105.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/2d9caf01c5bd424aab4df0a473479d73.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/545b63b3778a4fd980314b3b2445d51d.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/2cb9040c4a0f4a2e99e4bd858c187bcc.svg',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/87196a20589646708b796855e2645d87.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/7561539c50d540b1be04ef66a67ec216.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/8ec1fb8c537e4224b85ff56dc7a0901a.svg',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/7e4a252fdcf048b5b6b1c547334d74c9.svg',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/06d6a13551dc489fb2caa6940f4c9617.svg',
-        },
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/a595539610304abc86f87fa01b06a9fc.svg',
+        }
       ],
     }
   },
@@ -253,9 +253,10 @@ export default {
 @import '../common/font.css';
 
 .indexOne {
-  height: 600px;
+  height: 900px;
   width: 100%;
-  background: url('../assets/indexBg.png');
+  background: url('../assets/indexBg.png') no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
 
@@ -263,7 +264,7 @@ export default {
     width:600px;
     display: flex;
     flex-direction: column;
-    padding-top:213px;
+    padding-top:354px;
     
     // .indexOneTitleOne {
     //   font-family: PMZD;
@@ -347,7 +348,7 @@ export default {
 
       .indexTwoRightContent {
         color:#7794B1;
-        font-size: 20px;
+        font-size: 16px;
      }
     }
   }
@@ -523,7 +524,7 @@ export default {
       }
 
       .indexFifthContentRightBottom {
-        padding:20px 35px;
+        padding:30px 35px;
 
         .indexFifthContentRightBottomItem {
           display: flex;
@@ -551,7 +552,7 @@ export default {
           }
 
           .indexFifthContentRightBottomText {
-            font-size: 20px;
+            font-size: 16px;
             color: #A5B1BD;
           }
         }
@@ -597,11 +598,11 @@ export default {
         color:#fff;
         margin: 30px 0;
       }
-
+ 
       .indexSixthLeftContent {
         width: 700px;
         color:#fff;
-        font-size: 20px;
+        font-size: 16px;
       }
     }
 
@@ -638,7 +639,7 @@ export default {
 
         .indexSixthRightContent {
           color:#fff;
-          font-size: 20px;
+          font-size: 16px;
         }
       }
 
@@ -669,7 +670,7 @@ export default {
 
         .indexSixthRightContent {
           color:#fff;
-          font-size: 20px;
+          font-size: 16px;
         }
       }
     }

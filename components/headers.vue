@@ -121,7 +121,7 @@
           </v-stepper>
         </v-card-text>
         <v-card-actions class="d-flex justify-center">
-          <v-btn color="primary" @click="goDownload">前往帮助中心</v-btn>
+          <nuxt-link to="/helpCenter"><v-btn color="#409eff" @click="tipsDialog = false" style="color:#fff;text-decoration:none">前往帮助中心</v-btn></nuxt-link>
         </v-card-actions>
       </v-card>
     </v-dialog>
@@ -141,14 +141,16 @@ export default {
     }
   },
   methods: {
-    goDownload () {
-      if (this.$route.name === 'download') {
-        this.tipsDialog = false
-      } else {
-        this.$router.push({name: 'download'})
-        this.tipsDialog = false
-      }
-    },
+    // goDownload () {
+    //   console.log('22222222222')
+    //   if (this.$route.name === '/helpCenter') {
+    //     this.tipsDialog = false
+    //   } else {
+    //     console.log('111111111111')
+    //     this.$router.push({name: '/helpCenter'})
+    //     this.tipsDialog = false
+    //   }
+    // },
     openRK (status) {
       // console.log(this.IEVersion())
       if (this.IEVersion() === -1) {
