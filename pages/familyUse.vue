@@ -178,7 +178,7 @@ export default {
         align-items: center;
 
         .familyUseOneRightTitle {
-          // background: url('../assets');
+          background: url('../assets/family.png');
           color:rgba(243, 183, 6, 1);
           font-size: 40px;
           margin:15px 0px;

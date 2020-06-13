@@ -166,7 +166,7 @@ export default {
         align-items: center;
 
         .schoolUseOneRightTitle {
-          // background: url('../assets');
+          background: url('../assets/school.png');
           color:rgba(255, 99, 51, 1);
           font-size: 40px;
           margin:15px 0px;
