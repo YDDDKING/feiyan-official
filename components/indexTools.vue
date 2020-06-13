@@ -3,23 +3,23 @@
     <div class="indexTool">
       <div class="indexToolItem">
         <div class="indexToolItemImg"><img src="../assets/icon1.png"/></div>
-        <div class="indexToolItemTitle">题目讲解细致</div>
-        <div class="indexToolItemSmallTitle">高颗粒度的学习引导</div>
+        <div class="indexToolItemTitle">交互讲解</div>
+        <div class="indexToolItemSmallTitle">名师拆分，步骤引导</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#9B7AFC;"><img src="../assets/icon2.png"/></div>
-        <div class="indexToolItemTitle">荐题高度相似</div>
-        <div class="indexToolItemSmallTitle">学会举一反三</div>
+        <div class="indexToolItemTitle">类题绑定</div>
+        <div class="indexToolItemSmallTitle">启发思考，举一反三</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#FC7AA3;"><img src="../assets/icon3.png"/></div>
-        <div class="indexToolItemTitle">错题分类归纳</div>
+        <div class="indexToolItemTitle">错题归纳</div>
         <div class="indexToolItemSmallTitle">复盘学习，温故知新</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#FFB129;"><img src="../assets/icon4.png"/></div>
-        <div class="indexToolItemTitle">测评精准推题</div>
-        <div class="indexToolItemSmallTitle">根据测评等级推不同难度的题目</div>
+        <div class="indexToolItemTitle">个性测评</div>
+        <div class="indexToolItemSmallTitle">智能定级，高效训练</div>
       </div>
       <!-- 中间 -->
       <div class="indexToolMiddle">
@@ -35,23 +35,23 @@
     <div class="indexTool">
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#00E097"><img src="../assets/icon5.png"/></div>
-        <div class="indexToolItemTitle">班级一键组成</div>
-        <div class="indexToolItemSmallTitle">上手简单，方便快捷</div>
+        <div class="indexToolItemTitle">一键组班</div>
+        <div class="indexToolItemSmallTitle">线下习惯，上手简单</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#FFD629;"><img src="../assets/icon6.png"/></div>
-        <div class="indexToolItemTitle">试卷智能批改</div>
-        <div class="indexToolItemSmallTitle">智能选卷，适配主观</div>
+        <div class="indexToolItemTitle">智能批改</div>
+        <div class="indexToolItemSmallTitle">主观客观，一秒批改</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#FF8216;"><img src="../assets/icon7.png"/></div>
-        <div class="indexToolItemTitle">作业布置灵活</div>
-        <div class="indexToolItemSmallTitle">班级或分组，派卷后可调整</div>
+        <div class="indexToolItemTitle">作业布置</div>
+        <div class="indexToolItemSmallTitle">分组派发，同班异步</div>
       </div>
       <div class="indexToolItem">
         <div class="indexToolItemImg" style="background:#00B2FD;"><img src="../assets/icon8.png"/></div>
-        <div class="indexToolItemTitle">统计丰富详尽</div>
-        <div class="indexToolItemSmallTitle">根据测评等级推不同难度的题目</div>
+        <div class="indexToolItemTitle">学情报告</div>
+        <div class="indexToolItemSmallTitle">多维分析，量化能力</div>
       </div>
 
       <!-- 中间 -->

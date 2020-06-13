@@ -2,15 +2,14 @@
   <div>
     <div class="schoolUseOne">
       <div class="schoolUseOneContent">
-        <div class="schoolUseOneLeft">
-          <img src="../assets/person2.png"/>
-        </div>
-
         <div class="schoolUseOneRight">
           <div class="schoolUseOneRightTop"></div>
-          <div class="schoolUseOneRightTitle">智能教学工具</div>
+          <div class="schoolUseOneRightTitleBg">
+            <div class="schoolUseOneRightTitle">智能教学工具</div>
+          </div>
           <div class="schoolUseOneRightContent">
-            <div style='margin-bottom:10px'>飞燕数学是一款集智能派卷、自动批改、互动讲解、个性测评等功能为一体的新型交互式数学学习工具</div>
+            <div style='margin-bottom:10px'>飞燕数学是一款集智能派卷、自动批改、互动讲解、</div>
+            <div style='margin-bottom:10px'>个性测评等功能为一体的新型交互式数学学习工具</div>
             <div>高效智能组卷、批改所有题型、作业布置</div>
           </div>
         </div>
@@ -139,16 +138,15 @@ export default {
   .schoolUseOneContent {
     width:1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    .schoolUseOneLeft {
-      width: 600px;
-    }
-
     .schoolUseOneRight {
-      flex: 1;
-      margin-left:100px;
+      width: 500px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       .schoolUseOneRightTop {
         width:20px;
@@ -157,15 +155,30 @@ export default {
         background: #fff;
       }
 
-      .schoolUseOneRightTitle {
-        color:#fff;
-        font-size: 40px;
-        margin:15px 0px;
+      .schoolUseOneRightTitleBg {
+        margin-top: 25px;
+        height:80px;
+        width: 383px;
+        background: #fff;
+        border-radius:40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .schoolUseOneRightTitle {
+          // background: url('../assets');
+          color:rgba(255, 99, 51, 1);
+          font-size: 40px;
+          margin:15px 0px;
+          font-weight: 600;
+        }
       }
 
       .schoolUseOneRightContent {
+        text-align: center;
         color: #fff;
-        font-size: 24px;
+        font-size: 20px;
+        margin-top: 30px;
       }
     }
   }

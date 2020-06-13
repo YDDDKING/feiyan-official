@@ -58,43 +58,10 @@
 
       <div style="height:38px;width:100%;background:#ffd629"></div>
 
+      
       <!-- 第四部分开始 -->
-      <div class="indexForth">
-        <div class="indexForthContent">
-          <div class="indexForthContentTop"></div>
-          <div class="indexForthContentTitle">选择数学工具，就要高效的</div>
-          <div class="indexForthContentSmallTitle">EFFICIENT MATHEMATICAL TOOLS</div>
-          <div>
-            <indexTools />
-          </div>
-        </div>
-      </div>
-      <!-- 第四部分结束 -->
-
-
-      <!-- 第五部分开始 -->
       <div class="indexFifth">
         <div class="indexFifthContent">
-          <div class="indexFifthContentLeft">
-            <div class="indexFifthContentLeftTop">
-              <div class="indexFifthContentLeftTopBird"><img src="../assets/bird.png"/><span class="indexFifthContentLeftTopBirdText">题目</span></div>
-              <div style="height:240px"><img src="../assets/题目.png" style="width:100%;height:100%;border-radius:20px"/></div>
-            </div>
-
-            <div class="indexFifthContentLeftBottom">
-              <div class="indexFifthContentLeftBottomBird"><img src="../assets/bird.png"/><span class="indexFifthContentLeftBottomBirdText">解题步骤</span></div>
-              <v-carousel hide-delimiters height="290px" style="border-radius:20px">
-                <v-carousel-item
-                  v-for="(item,i) in items"
-                  :key="i"
-                  :src="item.src"
-                  style="height:90%"
-                >
-                  <!-- <img :src="item.src" style="height:90%;width:100%;border-radius:20px"> -->
-                </v-carousel-item>
-              </v-carousel>
-            </div>
-          </div>
 
           <div class="indexFifthContentRight">
             <div class="indexFifthContentRightTop">
@@ -111,10 +78,10 @@
                   </div>
                 </div>
 
-                <div class="indexFifthContentRightBottomText">名师对每道试题进行高颗粒度拆解，由人工智能系统对学生进行交互讲解，启发思考，拒绝死记硬背，独创智能辅导</div>
+                <div class="indexFifthContentRightBottomText">名师对每道试题进行高颗粒度拆解，由人工智能系统对学生进行交互讲解，启发思考，拒绝死记硬背</div>
               </div>
 
-              <div class="indexFifthContentRightBottomItem" style="margin-top:60px">
+              <div class="indexFifthContentRightBottomItem" style="margin-top:30px">
                 <div class="indexFifthContentRightBottomCircle">
                   <div class="indexFifthContentRightBottomCircleOne" style="background:#FFE6C0">
                     <div class="indexFifthContentRightBottomCircleTwo" style="background:#F39D18"></div>
@@ -124,7 +91,7 @@
                 <div class="indexFifthContentRightBottomText">高颗粒度的步骤引导，循循善诱，对学生答题过程进行标记分析，定位错因</div>
               </div>
 
-              <div class="indexFifthContentRightBottomItem" style="margin-top:60px">
+              <div class="indexFifthContentRightBottomItem" style="margin-top:30px">
                 <div class="indexFifthContentRightBottomCircle">
                   <div class="indexFifthContentRightBottomCircleOne" style="background:#FFE4E4">
                     <div class="indexFifthContentRightBottomCircleTwo" style="background:#FF4040"></div>
@@ -137,7 +104,23 @@
           </div>
         </div>
       </div>
+      <!-- 第四部分结束 -->
+
+
+
+      <!-- 第五部分开始 -->
+      <div class="indexForth">
+        <div class="indexForthContent">
+          <div class="indexForthContentTop"></div>
+          <div class="indexForthContentTitle">选择数学工具，就要高效的</div>
+          <div class="indexForthContentSmallTitle">EFFICIENT MATHEMATICAL TOOLS</div>
+          <div>
+            <indexTools />
+          </div>
+        </div>
+      </div>
       <!-- 第五部分结束 -->
+
 
 
       <!-- 第六部分开始 -->
@@ -424,7 +407,7 @@ export default {
 }
 
 .indexFifth {
-  height:800px;
+  height:640px;
   width: 100%;
   background: url(../assets/index9.png);
   display: flex;
@@ -433,66 +416,13 @@ export default {
   .indexFifthContent {
     width:1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-
-    .indexFifthContentLeft {
-
-      .indexFifthContentLeftTop {
-        width: 620px;
-        height: 250px;
-        background: #fff;
-        border-radius: 10px;
-        position: relative;
-        margin-bottom:49px;
-        border: 1px solid #2235A0;
-
-        .indexFifthContentLeftTopBird {
-          position: absolute;
-          top:-28px;
-          left: 16px;
-
-          .indexFifthContentLeftTopBirdText {
-            position: absolute;
-            top:15px;
-            left: 46px;
-            color:#2235A0;
-            font-size:14px;
-            font-weight: 600;
-          }
-        }
-      }
-
-      .indexFifthContentLeftBottom {
-        border: 1px solid #2235A0;
-        width: 620px;
-        height: 300px;
-        background: #fff;
-        border-radius: 10px;
-        position: relative;
-
-        .indexFifthContentLeftBottomBird{
-          position: absolute;
-          top:-28px;
-          left: 16px;
-          z-index: 10;
-
-          .indexFifthContentLeftBottomBirdText {
-            position: absolute;
-            top:15px;
-            left: 42px;
-            color:#2235A0;
-            font-size:14px;
-            font-weight: 600;
-          }
-        }
-      }
-    }
 
     .indexFifthContentRight {
       border: 1px solid #2235A0;
-      width: 540px;
-      height: 600px;
+      height: 440px;
+      width: 1080px;
       background: #fff;
       border-radius: 10px;
 
@@ -524,7 +454,7 @@ export default {
       }
 
       .indexFifthContentRightBottom {
-        padding:30px 35px;
+        padding:30px 110px;
 
         .indexFifthContentRightBottomItem {
           display: flex;

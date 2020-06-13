@@ -2,13 +2,11 @@
   <div>
     <div class="familyUseOne">
       <div class="familyUseOneContent">
-        <div class="familyUseOneLeft">
-          <img src="../assets/person3.png"/>
-        </div>
-
         <div class="familyUseOneRight">
           <div class="familyUseOneRightTop"></div>
-          <div class="familyUseOneRightTitle">家庭辅导工具</div>
+          <div class="familyUseOneRightTitleBg">
+            <div class="familyUseOneRightTitle">家庭辅导工具</div>
+          </div>
           <div class="familyUseOneRightContent">
             <div style='margin-bottom:10px'>每道精选题目皆配套名师拆解的步骤小问</div>
             <div style='margin-bottom:10px'>使用智能交互的方式引导学生自主思考解题逻辑</div>
@@ -71,7 +69,7 @@
             <div class="familyUseThreeContentBottomTwoTitle"><div><img src="../assets/familyUse3.png"/></div>掌握思路，同类尝试</div>
 
             <div>
-              <img src="../assets/familyCutPic/家庭页_原题+试一试.svg" width="100%" style="border-radius:20px"/>
+              <img src="../assets/familyCutPic/家庭页_原题+试一试.png" width="100%"/>
             </div>
           </div>
 
@@ -112,26 +110,27 @@
 export default {
   data () {
     return {
-      showTry:false,
-      showOther:true,
       items: [
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/d94c0f51b5444b23beb2044bc114a652.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/e2ee8acddefa42aba461fbd8ab2d505a.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/04e5c75afcf44b50a4ecc8abfbdd5a93.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/097dd9c7ea0f41e8b2870a6bdd890095.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/54e620e01a5a46fd831615cdfdf3ce48.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/1a453f9b8d11430b817990e9bf6a45c4.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/2516485d9ed441648ebba24df06d0955.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/e479a05a263a40b6bf88575262097fd8.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/0f8cd890fe694c5781bf7e003ff7a56c.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/16ab07d58f254c6e9b11bf44a8649a90.png',
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/6f5e7808273c46b5846e841a20dec805.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/49d2138cd7844d3684167d24b2ecc596.png',
+        },
+        {
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/57be2757a5324454bad82bb73d99218b.png',
         },
       ],
     }
@@ -150,16 +149,16 @@ export default {
   .familyUseOneContent {
     width:1200px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 
-    .familyUseOneLeft {
-      width: 600px;
-    }
-
     .familyUseOneRight {
-      flex: 1;
-      margin-left:100px;
+      margin-top: 10px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
 
       .familyUseOneRightTop {
         width:20px;
@@ -168,15 +167,30 @@ export default {
         background: #fff;
       }
 
-      .familyUseOneRightTitle {
-        color:#fff;
-        font-size: 40px;
-        margin:15px 0px;
+      .familyUseOneRightTitleBg {
+        margin-top: 25px;
+        height:80px;
+        width: 383px;
+        background: #fff;
+        border-radius:40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .familyUseOneRightTitle {
+          // background: url('../assets');
+          color:rgba(243, 183, 6, 1);
+          font-size: 40px;
+          margin:15px 0px;
+          font-weight: 600;
+        }
       }
 
       .familyUseOneRightContent {
+        text-align: center;
         color: #fff;
-        font-size: 24px;
+        font-size: 20px;
+        margin-top: 30px;
       }
     }
   }
@@ -304,11 +318,10 @@ export default {
       }
 
       .familyUseThreeContentBottomTwo {
-        width: 100%;
+        height: 440px;
         background: #fff;
         margin-top: 50px;
-        border: 1px solid rgba(34, 53, 160, 1);
-        border-radius: 10px;
+        border-radius: 20px;
         position: relative;
 
         .familyUseThreeContentBottomTwoTitle {
@@ -342,7 +355,7 @@ export default {
         background: #fff;
         margin-top: 50px;
         border: 1px solid rgba(34, 53, 160, 1);
-        border-radius: 10px;
+        border-radius: 20px;
         position: relative;
 
         .familyUseThreeContentBottomThreeTitle {
