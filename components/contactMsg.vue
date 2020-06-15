@@ -127,10 +127,8 @@ export default {
       this.realName = ''
       this.email = ''
       this.userMsg = ''
-      this.snackbar = true
-      this.color = 'green'
-      this.text = '提交成功'
-      this.$emit('closeDialog')
+      
+      this.$emit('submitMsg')
       
       http.post('/addMessage', model).then(res => {
 s        // console.log(res)

@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="familyUseOne">
+      <div class="familyUseOneContentBg"></div>
+
       <div class="familyUseOneContent">
         <div class="familyUseOneRight">
           <div class="familyUseOneRightTop"></div>
           <div class="familyUseOneRightTitleBg">
-            <div class="familyUseOneRightTitle">家庭辅导工具</div>
+            <div class="familyUseOneRightTitleBgImg">
+              <div class="familyUseOneRightTitle">家庭辅导工具</div>
+            </div>
           </div>
           <div class="familyUseOneRightContent">
             <div style='margin-bottom:10px'>每道精选题目皆配套名师拆解的步骤小问</div>
@@ -20,23 +24,23 @@
       <div class="familyUseTwoContent">
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop"><img src="../assets/icon1.png"/></div>
-          <div class="familyUseTwoContentIconTitle">题目讲解细致</div>
-          <div class="familyUseTwoContentIconSmallTitle">启发思考，拒绝死记硬背</div>
+          <div class="familyUseTwoContentIconTitle">交互讲解</div>
+          <div class="familyUseTwoContentIconSmallTitle">答案拆分，步骤引导</div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#9b7afc"><img src="../assets/icon2.png"/></div>
-          <div class="familyUseTwoContentIconTitle">荐题高度相似</div>
-          <div class="familyUseTwoContentIconSmallTitle">实时检验并巩固学习成果</div>
+          <div class="familyUseTwoContentIconTitle">类题绑定</div>
+          <div class="familyUseTwoContentIconSmallTitle">启发思考，举一反三</div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#fc7aa3"><img src="../assets/icon3.png"/></div>
-          <div class="familyUseTwoContentIconTitle">错题分类归纳</div>
+          <div class="familyUseTwoContentIconTitle">错题归纳</div>
           <div class="familyUseTwoContentIconSmallTitle">复盘学习，温故知新</div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#ffb129"><img src="../assets/icon4.png"/></div>
-          <div class="familyUseTwoContentIconTitle">测评精准推送</div>
-          <div class="familyUseTwoContentIconSmallTitle">实行进行知识点定级定档</div>
+          <div class="familyUseTwoContentIconTitle">个性测评</div>
+          <div class="familyUseTwoContentIconSmallTitle">智能定级，高效训练</div>
         </div>
       </div>
     </div>
@@ -112,7 +116,7 @@ export default {
     return {
       items: [
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/e2ee8acddefa42aba461fbd8ab2d505a.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/236f0d59e0d5464f93802200fd61e2e4.png',
         },
         {
           src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/097dd9c7ea0f41e8b2870a6bdd890095.png',
@@ -142,17 +146,32 @@ export default {
 .familyUseOne {
   height: 600px;
   width: 100%;
-  background: url('../assets/familyUseBg.png');
+  background: url('../assets/familyUseBg.png') no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
+
+  position: relative;
+
+  .familyUseOneContentBg {
+    height: 300px;
+    width: 100%;
+    background: rgba(255, 150, 64, 0.5);
+    z-index: 5;
+
+    position: absolute;
+    top:151px;
+    left: 0px;
+  }
 
   .familyUseOneContent {
     width:1200px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    .familyUseOneRight {
+    
+      .familyUseOneRight {
+      z-index: 5;
       margin-top: 10px;
       width: 600px;
       display: flex;
@@ -177,12 +196,19 @@ export default {
         justify-content: center;
         align-items: center;
 
-        .familyUseOneRightTitle {
-          background: url('../assets/family.png');
-          color:rgba(243, 183, 6, 1);
-          font-size: 40px;
-          margin:15px 0px;
-          font-weight: 600;
+        .familyUseOneRightTitleBgImg {
+          background: url('../assets/family.png') no-repeat;
+          background-size: cover;
+          height: 106%;
+          width: 100%;
+          text-align: center;
+
+          .familyUseOneRightTitle {
+            color:rgba(243, 183, 6, 1);
+            font-size: 40px;
+            margin:15px 0px;
+            font-weight: 600;
+          }
         }
       }
 
@@ -193,6 +219,8 @@ export default {
         margin-top: 30px;
       }
     }
+    
+   
   }
 }
 

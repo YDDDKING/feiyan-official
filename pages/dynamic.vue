@@ -1,13 +1,15 @@
 <template>
   <div style="display:flex;flex-direction:column;align-items:center">
     <!-- 顶部背景图和图片 -->
-    <div style="width:100%;height:550px">
+    <div style="width:100%;height:720px">
       <div class="bigBg">
-        <div class="banner-1">
-        <!-- <img src="../assets/pic1.jpg" width="1200px" style="position:absolute;bottom:-159px;border-radius:15px">
-         -->
-         <banner :bannerList="bannerList"/>
-        </div>
+        <v-card class="bannerBg">
+          <div class="banner-1">
+          <!-- <img src="../assets/pic1.jpg" width="1200px" style="position:absolute;bottom:-159px;border-radius:15px">
+           -->
+           <banner :bannerList="bannerList"/>
+          </div>
+        </v-card>
       </div>
     </div>
 
@@ -33,7 +35,7 @@
                 {{ item.dynamicType == 1?'新闻':'公告' }}
               </span>
             </div>
-            <div class="listSmallTitle">{{item.dynamicContent}}</div>
+            <div class="listSmallTitle">{{item.dynamicContent | ellipsis}}</div>
           </div>
         </div>
 
@@ -41,11 +43,14 @@
       </div>
 
       <div class="pagination">
-        <v-pagination
-          color='#1867c0'
-         :length="page"
-         v-model="curPage"
-        ></v-pagination>
+        <div>
+          <v-pagination
+            color='#409eff'
+           :length="page"
+           v-model="curPage"
+           v-if="page !== 1"
+          ></v-pagination>
+        </div>
       </div>
     </div>
   </div>
@@ -55,6 +60,15 @@
 import http from '../plugins/axios'
 import banner from '../components/banner'
 export default {
+  filters: {
+    ellipsis (value) {
+      if (!value) return ''
+      if (value.length > 65) {
+        return value.slice(0,65) + '...'
+      }
+      return value
+    }
+  },
   data () {
     return {
       dtList: [],
@@ -112,6 +126,12 @@ export default {
   justify-content:center;
   position:relative;
   background:url('../assets/background.png');
+
+  .bannerBg {
+    border-radius: 20px;
+    position: absolute;
+    top:159px;
+  }
 }
 .listTitle {
   color:#242424;
@@ -121,7 +141,10 @@ export default {
 }
 .listSmallTitle {
   color:#999;
-  font-size:14px
+  font-size:14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; //文本不换行，这样超出一行的部分被截取，显示...
 }
 .listTips {
   margin-left:15px;
@@ -144,12 +167,16 @@ export default {
   align-items:flex-end;
   color:#CBCBCB;
   font-size:14px;
+  padding-bottom: 9px;
 }
 .pagination {
-  margin-bottom:50px
+  margin-bottom:50px;
+  display: flex;
+  justify-content: flex-end;
 }
+
+
 .banner-1 {
-  height: 560px;
   // background-color: #f3f3f3;
   width: 100%;
   display: flex;
@@ -163,4 +190,5 @@ export default {
 .listContent:hover {
   cursor: pointer;
 }
+
 </style>

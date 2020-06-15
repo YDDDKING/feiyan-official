@@ -5,7 +5,6 @@
       v-model="type"
       hide-delimiter-background
       show-arrows-on-hover
-      cycle
     >
       <v-carousel-item
         class="carouselImg"
@@ -15,7 +14,7 @@
         :src="item.bannerUrl"
         @click="jump(item)"
       >
-      <img :src="item.bannerUrl" >
+      <!-- <img :src="item.bannerUrl" > -->
       </v-carousel-item>
     </v-carousel>
   </div>
@@ -52,4 +51,10 @@ export default {
   .carouselImg {
     cursor: pointer;
   }
+</style>
+
+<style lang="sass" scoped>
+.banner ::v-deep .v-window .v-window__container,.v-item-group,.theme--dark .v-window-item .v-responsive .v-responsive__sizer .v-image__image--cover
+  border-radius: 20px
+
 </style>

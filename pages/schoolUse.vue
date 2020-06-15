@@ -1,16 +1,20 @@
 <template>
   <div>
     <div class="schoolUseOne">
+      <div class="schoolUseOneContentBg"></div>
+
       <div class="schoolUseOneContent">
         <div class="schoolUseOneRight">
           <div class="schoolUseOneRightTop"></div>
           <div class="schoolUseOneRightTitleBg">
-            <div class="schoolUseOneRightTitle">智能教学工具</div>
+            <div class="schoolUseOneRightTitleBgImg">
+              <div class="schoolUseOneRightTitle">智能教学工具</div>
+            </div>
           </div>
           <div class="schoolUseOneRightContent">
-            <div style='margin-bottom:10px'>飞燕数学是一款集智能派卷、自动批改、互动讲解、</div>
-            <div style='margin-bottom:10px'>个性测评等功能为一体的新型交互式数学学习工具</div>
-            <div>高效智能组卷、批改所有题型、作业布置</div>
+            <div style='margin-bottom:10px'>贴合用户线下使用习惯，教师选择班级上传学生花名册，自动匹配分班</div>
+            <div style='margin-bottom:10px'>支持教师以集体或个人为单位进行针对性派卷，因材施教，实现同班异步提升</div>
+            <div>最后，生成丰富的学情报告，打通师生间的信息渠道，辅助教师开展精准的教学工作</div>
           </div>
         </div>
       </div>
@@ -20,23 +24,23 @@
       <div class="schoolUseTwoContent">
         <div class="schoolUseTwoContentIcon">
           <div class="schoolUseTwoContentIconTop"><img src="../assets/icon5.png"/></div>
-          <div class="schoolUseTwoContentIconTitle">班级一键组成</div>
-          <div class="schoolUseTwoContentIconSmallTitle">上手简单，方便快捷</div>
+          <div class="schoolUseTwoContentIconTitle">一键组班</div>
+          <div class="schoolUseTwoContentIconSmallTitle">线下习惯，上手简单</div>
         </div>
         <div class="schoolUseTwoContentIcon">
           <div class="schoolUseTwoContentIconTop" style="background:#ffd629"><img src="../assets/icon6.png"/></div>
-          <div class="schoolUseTwoContentIconTitle">作业布置灵活</div>
-          <div class="schoolUseTwoContentIconSmallTitle">可按个人或集体针对性派卷</div>
+          <div class="schoolUseTwoContentIconTitle">智能批改</div>
+          <div class="schoolUseTwoContentIconSmallTitle">主观客观，一秒批改</div>
         </div>
         <div class="schoolUseTwoContentIcon">
           <div class="schoolUseTwoContentIconTop" style="background:#ff8216"><img src="../assets/icon7.png"/></div>
-          <div class="schoolUseTwoContentIconTitle">试卷智能批改</div>
-          <div class="schoolUseTwoContentIconSmallTitle">智能选卷，自动批改</div>
+          <div class="schoolUseTwoContentIconTitle">作业布置</div>
+          <div class="schoolUseTwoContentIconSmallTitle">分组派发，同班异步</div>
         </div>
         <div class="schoolUseTwoContentIcon">
           <div class="schoolUseTwoContentIconTop" style="background:#00b2fd"><img src="../assets/icon8.png"/></div>
-          <div class="schoolUseTwoContentIconTitle">统计丰富详尽</div>
-          <div class="schoolUseTwoContentIconSmallTitle">按学生统计、按题目统计</div>
+          <div class="schoolUseTwoContentIconTitle">学情报告</div>
+          <div class="schoolUseTwoContentIconSmallTitle">多维分析，量化能力</div>
         </div>
       </div>
     </div>
@@ -131,9 +135,21 @@ export default {
 .schoolUseOne {
   height: 600px;
   width: 100%;
-  background: url('../assets/schoolUseBg.png');
+  background: url('../assets/schoolUseBg.png') no-repeat;
+  background-size: cover;
   display: flex;
   justify-content: center;
+
+  .schoolUseOneContentBg {
+    height: 300px;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    z-index: 5;
+
+    position: absolute;
+    top:151px;
+    left: 0px;
+  }
 
   .schoolUseOneContent {
     width:1200px;
@@ -142,7 +158,8 @@ export default {
     align-items: center;
 
     .schoolUseOneRight {
-      width: 500px;
+      z-index: 5;
+      width: 100%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -165,12 +182,19 @@ export default {
         justify-content: center;
         align-items: center;
 
-        .schoolUseOneRightTitle {
-          background: url('../assets/school.png');
-          color:rgba(255, 99, 51, 1);
-          font-size: 40px;
-          margin:15px 0px;
-          font-weight: 600;
+        .schoolUseOneRightTitleBgImg {
+          background: url('../assets/school.png') no-repeat;
+          background-size: cover;
+          height: 100%;
+          width: 100%;
+          text-align: center;
+
+          .schoolUseOneRightTitle {
+            color:rgba(255, 99, 51, 1);
+            font-size: 40px;
+            margin:15px 0px;
+            font-weight: 600;
+          }
         }
       }
 

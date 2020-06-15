@@ -8,37 +8,35 @@
       </div>
 
       <div style="display:flex;justify-content:space-between" class="headerTopTab">
-        <v-tabs color='#409eff' depressed v-model="tab">
+        <v-tabs color='#409eff' depressed v-model="tab" center-active active-class="selected">
+
+          <v-tabs-slider
+            style="width:20px;border-radius:20px"
+            color="#409eff"
+          ></v-tabs-slider>
+
           <v-tab>
             <nuxt-link to="/" class="headerTab">首页</nuxt-link>
           </v-tab>
           <v-tab>
             <nuxt-link to="/dynamic" class="headerTab">动态</nuxt-link>
           </v-tab>
-          <v-tab>
-            <v-menu offset-y open-on-hover>
-              <template v-slot:activator="{ on }">
-                <span v-on="on" class="headerTab">产品介绍</span>
-              </template>
-              
-              <v-list>
-                <v-list-item>
-                  <nuxt-link to="/familyUse" class="headerTab"><v-list-item-title style="cursor:pointer">家庭应用</v-list-item-title></nuxt-link>
-                </v-list-item>
-                <v-list-item>
-                  <nuxt-link to="/schoolUse" class="headerTab"><v-list-item-title style="cursor:pointer">校园应用</v-list-item-title></nuxt-link>
-                </v-list-item>
-              </v-list>
-            </v-menu>
-          </v-tab>
-          <!-- <v-tab style="position:relative">
-            <span class="headerTab" style="position:relative">产品介绍</span>
-            <div style="position:absolute;right:0px;top:47px;width:100px;height:100px;background:#fff">
-              <div>家庭应用</div>
-              <div>校园应用</div>
-            </div> -->
-            <!-- <nuxt-link to="/product" class="headerTab">产品介绍</nuxt-link> -->
-          <!-- </v-tab> -->
+
+          
+          <v-menu offset-y close-on-content-click open-on-hover>
+            <template v-slot:activator="{ on }">
+              <v-tab v-on="on" style="color:#000"><nuxt-link to="/familyUse" class="headerTab">产品介绍</nuxt-link></v-tab>
+            </template>
+            <v-list>
+              <v-list-item>
+                <v-list-item-title style="cursor:pointer"><nuxt-link to="/familyUse" class="headerTab">家庭应用</nuxt-link></v-list-item-title>
+              </v-list-item>
+              <v-list-item>
+                <v-list-item-title style="cursor:pointer"><nuxt-link to="/schoolUse" class="headerTab">校园应用</nuxt-link></v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+         
           <v-tab>
             <nuxt-link to="/helpCenter" class="headerTab">帮助中心</nuxt-link>
           </v-tab>
@@ -56,20 +54,20 @@
         </div> -->
 
         <div style="width:30%;display:flex;align-items:center">
-          <v-btn
-            small
-            color='#409eff'
-            rounded
-            style="color:#fff;margin:0 10px 0"
-            @click="openRK(1)"
-          >
-            教师入口
-          </v-btn>
+            <v-btn
+              small
+              color='#409eff'
+              rounded
+              style="color:#fff;margin:0 10px 0;box-shadow: 0px 5px 10px 2px rgba(64, 158, 255, 0.3);"
+              @click="openRK(1)"
+            >
+              教师入口
+            </v-btn>
           <v-btn
             small
             color='#7bca63'
             rounded
-            style="color:#fff"
+            style="box-shadow:0px 5px 10px 2px rgba(123, 202, 99, 0.3);color:#fff"
             @click="openRK(2)"
           >
             学生入口
@@ -138,9 +136,14 @@ export default {
       tab: 0,
       tipsDialog: false,
       st: "1",
+      showPro: false
     }
   },
   methods: {
+    onEnter (e) {
+      console.log(e)
+      this.showPro = true
+    },
     // goDownload () {
     //   console.log('22222222222')
     //   if (this.$route.name === '/helpCenter') {
@@ -236,11 +239,25 @@ export default {
   width:100%;
   line-height:48px
 }
+
+.selected {
+  a,span {
+    color:#1181ef
+  }
+}
+
+.headerTeacher:hover {
+  box-shadow: 0px 10px 10px 10px rgba(64, 158, 255, 0.3);
+}
 </style>
 
 
 
 <style lang="sass" scoped>
+.headerTopTab ::v-deep .v-tabs .v-item-group .v-slide-group__wrapper .v-slide-group__content .v-tabs-slider-wrapper
+  display: flex
+  justify-content: center
+
 #app ::v-deep .v-menu__content
   left:793px
 </style>

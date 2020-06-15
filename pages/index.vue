@@ -4,7 +4,7 @@
       <div class="indexOne">
         <div class="indexOneTitle">
           <div class="indexOneTitleOne"><img src="../assets/indexBanner.png"/></div>
-          <div class="indexOneTitleTwo">YOUR PRIVATE TUTOR INTELLIFENCE</div>
+          <div class="indexOneTitleTwo">YOUR PRIVATE TUTOR INTELLIGENCE</div>
           <div class="indexOneTitleBtn">
             <div class="indexOneTitleTeaBtn" @click="openRK(1)">教师入口</div>
             <div class="indexOneTitleStuBtn" @click="openRK(2)">学生入口</div>

@@ -1,5 +1,17 @@
 <template>
   <div class='contactBg'>
+    <!-- 提示框 -->
+    <v-snackbar
+      v-model="snackbar"
+      :timeout="timeout"
+      :multi-line="true"
+      :color="color"
+      style="position:fixed;top:-1000px"
+    >
+      {{ text }}
+    </v-snackbar>
+
+
     <div class="contactCenter">
       <!-- 左边地图部分 -->
       <div class="contactLeft">
@@ -31,7 +43,7 @@
       </div>
       
       <v-dialog v-model="dialog" persistent max-width="620">
-        <contactPeopleMsg v-if="dialog" @closeDialog='closeDialog()'/>
+        <contactPeopleMsg v-if="dialog" @closeDialog='closeDialog()' @submitMsg='submitMsg'/>
       </v-dialog>
     </div>
 
@@ -50,10 +62,15 @@ export default {
   },
   data () {
     return {
-        center: {lng: 113.266244, lat: 23.210388 },
-        zoom: 3,  //缩放级别
-        show: false,  //显示标签
-        dialog: false
+      center: {lng: 113.266244, lat: 23.210388 },
+      zoom: 3,  //缩放级别
+      show: false,  //显示标签
+      dialog: false,
+
+      snackbar: false,
+      text: '',
+      timeout: 2000,
+      color:'success'
     }
   },
   methods: {
@@ -67,6 +84,13 @@ export default {
       this.dialog = !this.dialog
     },
     closeDialog () {
+      this.dialog = false
+    },
+    submitMsg () {
+      this.snackbar = true
+      this.color = 'green'
+      this.text = '提交成功'
+
       this.dialog = false
     }
   }
