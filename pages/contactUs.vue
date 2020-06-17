@@ -6,7 +6,7 @@
       :timeout="timeout"
       :multi-line="true"
       :color="color"
-      style="position:fixed;top:-1000px"
+      top
     >
       {{ text }}
     </v-snackbar>
