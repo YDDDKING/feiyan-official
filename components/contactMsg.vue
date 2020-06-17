@@ -22,7 +22,7 @@
         <!-- 姓名 -->
         <div>
           <span class="contactMsgBranch">姓名</span>
-          <input type="text" class="contactMsgInput" placeholder="请输入"   v-model="realName"/>
+          <input type="text" class="contactMsgInput" placeholder="请输入" v-model="realName"/>
           <div style="position:relative">
             <span style="position:absolute;right:56px;top:-28px;color:#C0C4CC;  font-size:14px">{{realName.length}}/10</span>
           </div>
@@ -134,6 +134,10 @@ export default {
           this.userMsg = ''
 
           this.$emit('submitMsg')
+        } else {
+          this.snackbar = true
+          this.color = 'error'
+          this.text = '提交失败'
         }
       })
     }

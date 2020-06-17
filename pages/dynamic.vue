@@ -89,12 +89,12 @@ export default {
   created () {
     this.getDynamicList()
   },
-  async asyncData({ $axios }) {
-    const res = await http.get('/getBannerList', {params:{bannerType:2}})
-    let bannerList = res.data.datas
-    // console.log(res)
-    return { bannerList }
-  },
+  // async asyncData({ $axios }) {
+  //   const res = await http.get('/getBannerList', {params:{bannerType:2}})
+  //   let bannerList = res.data.datas
+  //   // console.log(res)
+  //   return { bannerList }
+  // },
   watch: {
     curPage (newVal, oldVal) {
       this.getDynamicList()
@@ -107,7 +107,6 @@ export default {
         limit: this.limit
       }
       const res = await http.get('/api-generator/website/dynamic/list', {params:model})
-      console.log(res)
       this.dtList = res.data.data
       this.page = res.data.page
     },
