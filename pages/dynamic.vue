@@ -24,13 +24,15 @@
       <div class="listContent" v-for="(item,index) in dtList" :key="index" @click="jumpLink(item)">
         <div style="display:flex;position:relative;width:1100px;">
           <!-- <img src="../assets/smallPics.png" style="margin-right:25px;z-index:10;width:210px"> -->
-          <div style="width:210px;z-index:2;margin-right:25px;height:95px">
-            <img :src="item.dynamicImgUrl" style="width:100%;height:100%" v-if="item.dynamicImgUrl">
-          </div>
-          <!-- 阴影 -->
-          <div style="position:absolute;left:6px;top:20px;width:214px;height:86px;background:#ebf5ff;border-radius:5px"></div>
+          <div style="width:210px;z-index:2;margin-right:25px;height:95px;position:relative">
+            <img :src="item.dynamicUrl" style="width:210px;height:100%" v-if="item.dynamicUrl">
 
-          <div style="display:flex;justify-content:space-around;flex-direction:column;">
+              <!-- 阴影 -->
+            <div style="position:absolute;left:6px;top:20px;width:214px;height:86px;background:#ebf5ff;border-radius:5px"></div>
+          </div>
+          
+
+          <div style="flex:1;display:flex;justify-content:space-around;flex-direction:column;">
             <div>
               <span class="listTitle">{{item.dynamicTitle}}</span>
               <span :class="item.dynamicType == 1? 'listTipsNew':'listTips'">
@@ -66,8 +68,8 @@ export default {
   filters: {
     ellipsis (value) {
       if (!value) return ''
-      if (value.length > 65) {
-        return value.slice(0,65) + '...'
+      if (value.length > 60) {
+        return value.slice(0,60) + '...'
       }
       return value
     }

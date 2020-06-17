@@ -27,7 +27,8 @@ module.exports = {
   server: {
     port: 8081, // default: 3000
     host: '127.0.0.1' // default: localhost
-    // host: '127.0.0.1'
+    // port: 3001,
+    // host: '10.10.100.255'
   },
 
   router: {
