@@ -25,10 +25,10 @@
         <div style="display:flex;width:1100px;">
           <!-- <img src="../assets/smallPics.png" style="margin-right:25px;z-index:10;width:210px"> -->
           <div style="width:210px;z-index:2;margin-right:25px;height:95px;position:relative">
-            <img :src="item.dynamicUrl" style="width:210px;height:100%" v-if="item.dynamicUrl">
+            <img :src="item.dynamicImgUrl" style="width:210px;height:100%;" v-if="item.dynamicImgUrl">
 
             <!-- 阴影 -->
-            <div style="position:absolute;left:6px;top:20px;width:214px;height:86px;background:#ebf5ff;border-radius:5px"></div>
+            <div style="position:absolute;left:6px;top:20px;width:214px;height:86px;background:#ebf5ff;border-radius:5px;z-index:-1"></div>
           </div>
           
 
