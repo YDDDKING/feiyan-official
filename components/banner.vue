@@ -10,9 +10,7 @@
         class="carouselImg"
         v-for="(item, i) in bannerList"
         :key="i"
-        nuxt
-        :src="item.bannerUrl"
-        @click="jump(item)"
+        :src="item.src"
       >
       <!-- <img :src="item.bannerUrl" > -->
       </v-carousel-item>
@@ -22,23 +20,25 @@
 
 <script>
 export default {
-  props: {
-    bannerList: {
-      type: Array,
-      default: () => []
-    }
-  },
   data () {
     return {
-      type: 0
+      type: 0,
+      bannerList: [
+        {
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/83a63373edc34ea9afff1daadd491a87.jpg',
+        },
+        {
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/0922279909af4693b686ee28488338f8.jpg',
+        }
+      ]
     }
   },
   methods: {
-    jump (item) {
-      if (item.jumpUrl) {
-        window.open(item.jumpUrl)
-      }
-    }
+    // jump (item) {
+    //   if (item.jumpUrl) {
+    //     window.open(item.jumpUrl)
+    //   }
+    // }
   }
 }
 </script>

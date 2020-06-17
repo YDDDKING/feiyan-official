@@ -67,7 +67,7 @@
             <div class="indexFifthContentRightTop">
               <div class="indexFifthContentRightTopOne"></div>
               <div class="indexFifthContentRightTopTwo">TI智能辅导系统</div>
-              <div class="indexFifthContentRightTopThree">TUTOR INTELLIGENCE</div>
+              <!-- <div class="indexFifthContentRightTopThree">TUTOR INTELLIGENCE</div> -->
             </div>
 
             <div class="indexFifthContentRightBottom">
@@ -112,8 +112,8 @@
       <div class="indexForth">
         <div class="indexForthContent">
           <div class="indexForthContentTop"></div>
-          <div class="indexForthContentTitle">选择数学工具，就要高效的</div>
-          <div class="indexForthContentSmallTitle">EFFICIENT MATHEMATICAL TOOLS</div>
+          <div class="indexForthContentTitle">高效数学学习工具</div>
+          <!-- <div class="indexForthContentSmallTitle">EFFICIENT MATHEMATICAL TOOLS</div> -->
           <div>
             <indexTools />
           </div>
@@ -396,6 +396,7 @@ export default {
         font-family: PMZD;
         color: rgba(64, 158, 255, 1);
         font-size: 35px;
+        margin-bottom: 50px;
       }
 
       .indexForthContentSmallTitle {
@@ -431,6 +432,7 @@ export default {
         display: flex;
         align-items: center;
         flex-direction: column;
+        height: 190px;
 
         .indexFifthContentRightTopOne {
           background:#409EFF;

@@ -7,7 +7,7 @@
           <div class="banner-1">
           <!-- <img src="../assets/pic1.jpg" width="1200px" style="position:absolute;bottom:-159px;border-radius:15px">
            -->
-           <banner :bannerList="bannerList"/>
+           <banner/>
           </div>
         </v-card>
       </div>
@@ -16,7 +16,7 @@
     <!-- 动态列表部分 -->
     <div style="width:1200px">
       <!-- 列表标题 -->
-      <div style="border-bottom:1px solid rgb(64, 158, 255, 0.3);padding-bottom:50px;margin-bottom:70px">
+      <div style="border-bottom:1px solid rgb(64, 158, 255, 0.3);padding-bottom:30px;margin-bottom:50px">
         <img src="../assets/msgList.png" width="264px">
       </div>
 
@@ -24,10 +24,12 @@
       <div class="listContent" v-for="(item,index) in dtList" :key="index" @click="jumpLink(item)">
         <div style="display:flex;position:relative;width:1100px;">
           <!-- <img src="../assets/smallPics.png" style="margin-right:25px;z-index:10;width:210px"> -->
-          <img src="item.dynamicImgUrl" style="margin-right:25px;z-index:10;width:210px">
-          <!-- 阴影 -->
-          <div style="position:absolute;left:6px;top:13px;width:214px;height:86px;background:#ebf5ff;border-radius:5px">
+          <div style="width:210px;z-index:2;margin-right:25px;height:95px">
+            <img :src="item.dynamicImgUrl" style="width:100%;height:100%" v-if="item.dynamicImgUrl">
           </div>
+          <!-- 阴影 -->
+          <div style="position:absolute;left:6px;top:20px;width:214px;height:86px;background:#ebf5ff;border-radius:5px"></div>
+
           <div style="display:flex;justify-content:space-around;flex-direction:column;">
             <div>
               <span class="listTitle">{{item.dynamicTitle}}</span>
@@ -35,6 +37,7 @@
                 {{ item.dynamicType == 1?'新闻':'公告' }}
               </span>
             </div>
+            
             <div class="listSmallTitle">{{item.dynamicContent | ellipsis}}</div>
           </div>
         </div>
@@ -101,9 +104,9 @@ export default {
         page: this.curPage,
         limit: this.limit
       }
-      const res = await http.get('/getDynamicList', {params:model})
-      // console.log(res)
-      this.dtList = res.data.datas
+      const res = await http.get('/api-generator/website/dynamic/list', {params:model})
+      console.log(res)
+      this.dtList = res.data.data
       this.page = res.data.page
     },
     cutTime (time) {
@@ -185,7 +188,7 @@ export default {
 .listContent {
   display:flex;
   justify-content:space-between;
-  margin-bottom:80px;
+  margin-bottom:60px;
 }
 .listContent:hover {
   cursor: pointer;

@@ -49,8 +49,8 @@
       <div class="familyUseThreeContent">
         <div class="familyUseThreeContentTop">
           <div class="familyUseThreeContentTopOne"></div>
-          <div class="familyUseThreeContentTopTwo">选择数学工具，就要高效的</div>
-          <div class="familyUseThreeContentTopThree">EFFICIENT</div>
+          <div class="familyUseThreeContentTopTwo">高效数学学习工具</div>
+          <!-- <div class="familyUseThreeContentTopThree">EFFICIENT</div> -->
         </div>
 
         <div class="familyUseThreeContentBottom">
@@ -96,7 +96,7 @@
         <div class="familyUseForthContentTop">
           <div class="familyUseForthContentTopOne"></div>
           <div class="familyUseForthContentTopTwo">智能测评</div>
-          <div class="familyUseForthContentTopThree">INTELLIGENT EVALUATION</div>
+          <div class="familyUseForthContentTopThree" ></div>
         </div>
 
         <div class="familyUseForthContentBottom">
@@ -451,6 +451,7 @@ export default {
 
       .familyUseForthContentTopThree {
         font-size: 20px;
+        height: 20px;
         color:rgba(232, 240, 248, 1);
       }
     }

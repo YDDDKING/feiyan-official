@@ -67,8 +67,8 @@
 </template>
 
 <script>
-// import http from '../plugins/axios'
-import http from 'axios'
+import http from '../plugins/axios'
+// import http from 'axios'
 export default {
   data () {
     return {
@@ -93,14 +93,17 @@ export default {
     
     // 提交信息事件
     sumbitMsg () {
-      if (this.realName.length > 10 || this.realName.length === 0) {
+      if (this.realName.length > 10 || !this.realName.length) {
         this.text = '请输入0~10位的姓名'
         this.snackbar = true
         return
       }
 
-      if (this.email.length === 0) {
-        this.text = '请输入您的邮箱'
+      // 邮箱限制
+      const emailTest = /.+@.+\..+/.test(this.email)
+
+      if (!this.email.length || !emailTest) {
+        this.text = '请输入正确的邮箱'
         this.snackbar = true
         return
       }
@@ -123,25 +126,15 @@ export default {
         messageEmail: this.email,
         messageContent: this.userMsg
       }
-
-      this.realName = ''
-      this.email = ''
-      this.userMsg = ''
       
-      this.$emit('submitMsg')
-      
-      http.post('/addMessage', model).then(res => {
-s        // console.log(res)
-        // if (res.data.respCode === 0) {
-        //   this.realName = ''
-        //   this.email = ''
-        //   this.userMsg = ''
+      http.post('/api-generator/website/message', model).then(res => {
+        if (!res.data.respCode) {
+          this.realName = ''
+          this.email = ''
+          this.userMsg = ''
 
-        //   this.snackbar = true
-        //   this.color = 'green'
-        //   this.text = '提交成功'
-        // this.$emit('closeDialog')
-        // }
+          this.$emit('submitMsg')
+        }
       })
     }
   }

@@ -50,13 +50,13 @@
         <div class="schoolUseThreeContentTop">
           <div class="schoolUseThreeContentTopOne"></div>
           <div class="schoolUseThreeContentTopTwo">教学得力帮手</div>
-          <div class="schoolUseThreeContentTopThree">TEACHING HELPER</div>
+          <div class="schoolUseThreeContentTopThree"></div>
         </div>
 
         <div class="schoolUseThreeContentBottom">
           <div class="schoolUseThreeContentBottomItem">
             <div class="schoolUseThreeContentBottomItemTop">
-              <img src="../assets/schoolCutPic/校园_智能组卷.png" style="border-radius:20px;cursor:pointer" @click="showHelpPicOne = true"/>
+              <img src="../assets/schoolCutPic/校园_智能组卷.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-9px" @click="showHelpPicOne = true"/>
               <img src="../assets/schoolCutPic/校园_智能组卷-大.svg" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicOne" @click="showHelpPicOne = false"/>
             </div>
             <div class="schoolUseThreeContentBottomItemTitle">智能组卷</div>
@@ -65,8 +65,8 @@
 
           <div class="schoolUseThreeContentBottomItemTwo">
             <div class="schoolUseThreeContentBottomItemTop">
-              <img src="../assets/schoolCutPic/校园_布置作业.svg" style="border-radius:20px;cursor:pointer"  @click="showHelpPicTwo = true"/>
-              <img src="../assets/schoolCutPic/校园_布置作业-大.svg" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicTwo" @click="showHelpPicTwo = false"/>
+              <img src="../assets/schoolCutPic/校园_布置作业.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-9px"  @click="showHelpPicTwo = true"/>
+              <img src="../assets/schoolCutPic/校园_布置作业-大.png" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicTwo" @click="showHelpPicTwo = false"/>
             </div>
             <div class="schoolUseThreeContentBottomItemTitle">布置作业</div>
             <div class="schoolUseThreeContentBottomItemGang"></div>
@@ -74,8 +74,8 @@
 
           <div class="schoolUseThreeContentBottomItemThree">
             <div class="schoolUseThreeContentBottomItemTop">
-              <img src="../assets/schoolCutPic/校园_学生统计.svg" style="border-radius:20px;cursor:pointer"  @click="showHelpPicThree = true"/>
-              <img src="../assets/schoolCutPic/校园_学生统计-大.svg" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicThree" @click="showHelpPicThree = false"/>
+              <img src="../assets/schoolCutPic/校园_学生统计.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-9px"  @click="showHelpPicThree = true"/>
+              <img src="../assets/schoolCutPic/校园_学生统计-大.png" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicThree" @click="showHelpPicThree = false"/>
             </div>
             <div class="schoolUseThreeContentBottomItemTitle">学生统计</div>
             <div class="schoolUseThreeContentBottomItemGang"></div>
@@ -90,7 +90,6 @@
           <div class="schoolUseForthContentTopGang"></div>
           <div class="schoolUseForthContentTopTitle">学校管理</div>
           <div class="schoolUseForthContentTopSmallTitle">
-            CAMPUS MANAGEMENT SOLUTION
           </div>
         </div>
 
@@ -103,8 +102,8 @@
             <div style="position:absolute;top:-347px;left:293px;cursor:pointer" @click="showPicOne = true"><img src="../assets/schoolUseIcon.png"/></div>
             <div style="position:absolute;top:-347px;left:776px;cursor:pointer" @click="showPicTwo = true"><img src="../assets/schoolUseIcon.png"/></div>
             
-            <div style="position:absolute;top:-683px;left:134px;cursor:pointer" v-if="showPicOne" @click="showPicOne = false"><img src="../assets/schoolCutPic/classManage.svg"/></div>
-            <div style="position:absolute;top:-683px;left:615px;cursor:pointer" v-if="showPicTwo" @click="showPicTwo = false"><img src="../assets/schoolCutPic/stuAdmin.svg"/></div>
+            <div style="position:absolute;top:-683px;left:134px;cursor:pointer" v-if="showPicOne" @click="showPicOne = false"><img src="../assets/schoolCutPic/生成班级管理.png"/></div>
+            <div style="position:absolute;top:-683px;left:615px;cursor:pointer" v-if="showPicTwo" @click="showPicTwo = false"><img src="../assets/schoolCutPic/生成学生账号.png"/></div>
 
             <div style="position:absolute;top:-171px;left:275px;color:rgba(64, 158, 255, 1);font-size:20px">生成科任老师账号</div>
             <div style="position:absolute;top:-170px;left:760px;text-align:center;color:rgba(64, 158, 255, 1);font-size:20px">上传花名册，<div> 一键生成学生账号</div></div>
@@ -290,7 +289,7 @@ export default {
       .schoolUseThreeContentTopThree {
         font-size: 20px;
         color:#fff;
-
+        height: 30px;
       }
     }
 
@@ -384,6 +383,7 @@ export default {
       }
 
       .schoolUseForthContentTopSmallTitle {
+        height: 40px;
         color: rgba(64, 158, 255, 0.2);
         font-size: 28px;
         margin:5px 0px;
