@@ -158,9 +158,9 @@ export default {
       // console.log(this.IEVersion())
       if (this.IEVersion() === -1) {
         if (status === 1) {
-          window.open('http://mt.feiyanmath.com')
+          window.open('https://mt.feiyanmath.com')
         } else {
-          window.open('http://ms.feiyanmath.com')
+          window.open('https://ms.feiyanmath.com')
         }
       } else {
         this.tipsDialog = true
