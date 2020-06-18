@@ -13,7 +13,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: "keywords", content: "飞燕数学、初中数学、凤腾阁、数学辅导、数学工具、教育、科技、刷题" },
+      { name: "keywords", content: "飞燕数学,初中,数学,凤腾阁,数学辅导,数学工具,教育,刷题,考试,数学考试,测试,做题" },
       { hid: 'description', name: 'description', content: '飞燕数学是一款集智能派卷、自动批改、互动讲解、个性测评等功能为一体的新型交互式数学学习工具' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=Edge,chrome=1' }
     ],
