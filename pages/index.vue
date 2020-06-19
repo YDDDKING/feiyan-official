@@ -66,7 +66,7 @@
           <div class="indexFifthContentRight">
             <div class="indexFifthContentRightTop">
               <div class="indexFifthContentRightTopOne"></div>
-              <div class="indexFifthContentRightTopTwo">TI智能辅导系统</div>
+              <div class="indexFifthContentRightTopTwo">智能辅导系统</div>
               <!-- <div class="indexFifthContentRightTopThree">TUTOR INTELLIGENCE</div> -->
             </div>
 
