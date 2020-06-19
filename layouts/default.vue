@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <div>
-      <Header/>
+      <Header />
       <v-content>
         <nuxt />
       </v-content>
-      <Footer/>
+      <Footer />
     </div>
   </v-app>
 </template>
@@ -16,7 +16,7 @@ import Footer from '../components/footers'
 export default {
   components: {
     Header,
-    Footer,
+    Footer
   },
   data () {
     return {

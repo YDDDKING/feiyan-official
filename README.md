@@ -1,6 +1,4 @@
-# feiyan-official
-
-> My astounding Nuxt.js project
+# feiyan-newOfficial
 
 ## Build Setup
 

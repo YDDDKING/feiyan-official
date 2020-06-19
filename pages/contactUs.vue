@@ -1,5 +1,5 @@
 <template>
-  <div class='contactBg'>
+  <div class="contactBg">
     <!-- 提示框 -->
     <v-snackbar
       v-model="snackbar"
@@ -10,7 +10,6 @@
     >
       {{ text }}
     </v-snackbar>
-
 
     <div class="contactCenter">
       <!-- 左边地图部分 -->
@@ -30,24 +29,29 @@
 
       <!-- 右边内容部分 -->
       <div class="contactRight">
-        <div><img src="../assets/icon／location.png"/></div>
-        <div class="contactName">广州市凤腾阁科技有限公司</div>
+        <div>
+          <img src="../assets/icon／location.png" />
+        </div>
+        <div class="contactName">
+          广州市凤腾阁科技有限公司
+        </div>
         <div class="contactMsg">
-          <div style="margin-bottom:10px">电话：020-31924824</div>
-          <div style="margin-bottom:10px">邮箱：feiyanmath@feiyanmath.com</div>
+          <div style="margin-bottom:10px">
+            电话：020-31924824
+          </div>
+          <div style="margin-bottom:10px">
+            邮箱：feiyanmath@feiyanmath.com
+          </div>
           <div>地址：广州市白云区黄石西路599号元邦大厦606</div>
         </div>
         <div>
-          <v-btn outlined color="#409EFF" class="contactBtn" @click='openContact'>联系我们</v-btn>
+          <v-btn outlined color="#409EFF" class="contactBtn" @click="openContact">联系我们</v-btn>
         </div>
       </div>
-      
       <v-dialog v-model="dialog" persistent max-width="620">
-        <contactPeopleMsg v-if="dialog" @closeDialog='closeDialog()' @submitMsg='submitMsg'/>
+        <contactPeopleMsg v-if="dialog" @closeDialog="closeDialog()" @submitMsg="submitMsg" />
       </v-dialog>
     </div>
-
-    
   </div>
 </template>
 
@@ -62,15 +66,15 @@ export default {
   },
   data () {
     return {
-      center: {lng: 113.266244, lat: 23.210388 },
-      zoom: 3,  //缩放级别
-      show: false,  //显示标签
+      center: { lng: 113.266244, lat: 23.210388 },
+      zoom: 3, // 缩放级别
+      show: false, // 显示标签
       dialog: false,
 
       snackbar: false,
       text: '',
       timeout: 2000,
-      color:'success'
+      color: 'success'
     }
   },
   methods: {

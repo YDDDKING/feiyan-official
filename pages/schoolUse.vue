@@ -49,7 +49,7 @@
       <div class="schoolUseThreeContent">
         <div class="schoolUseThreeContentTop">
           <div class="schoolUseThreeContentTopOne"></div>
-          <div class="schoolUseThreeContentTopTwo">教学帮手</div>
+          <div class="schoolUseThreeContentTopTwo">教学得力帮手</div>
           <div class="schoolUseThreeContentTopThree"></div>
         </div>
 

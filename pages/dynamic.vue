@@ -5,9 +5,9 @@
       <div class="bigBg">
         <v-card class="bannerBg">
           <div class="banner-1">
-          <!-- <img src="../assets/pic1.jpg" width="1200px" style="position:absolute;bottom:-159px;border-radius:15px">
+            <!-- <img src="../assets/pic1.jpg" width="1200px" style="position:absolute;bottom:-159px;border-radius:15px">
            -->
-           <banner/>
+            <banner />
           </div>
         </v-card>
       </div>
@@ -21,30 +21,43 @@
       </div>
 
       <!-- 列表内容 -->
-      <div class="listContent" v-for="(item,index) in dtList" :key="index" @click="jumpLink(item)">
+      <div
+        v-for="(item,index) in dtList"
+        :key="index"
+        class="listContent"
+        @click="jumpLink(item)"
+      >
         <div style="display:flex;width:1100px;">
           <!-- <img src="../assets/smallPics.png" style="margin-right:25px;z-index:10;width:210px"> -->
           <div style="width:210px;z-index:2;margin-right:25px;height:95px;position:relative">
-            <img :src="item.dynamicImgUrl" style="width:210px;height:100%;" v-if="item.dynamicImgUrl">
+            <img
+              v-if="item.dynamicImgUrl"
+              :src="item.dynamicImgUrl"
+              style="width:210px;height:100%;"
+            >
 
             <!-- 阴影 -->
             <div style="position:absolute;left:6px;top:20px;width:214px;height:86px;background:#ebf5ff;border-radius:5px;z-index:-1"></div>
           </div>
-          
 
           <div style="flex:1;display:flex;justify-content:space-around;flex-direction:column;">
             <div>
-              <span class="listTitle">{{item.dynamicTitle}}</span>
+              <span class="listTitle">
+                {{ item.dynamicTitle }}
+              </span>
               <span :class="item.dynamicType == 1? 'listTipsNew':'listTips'">
                 {{ item.dynamicType == 1?'新闻':'公告' }}
               </span>
             </div>
-            
-            <div class="listSmallTitle">{{item.dynamicContent | ellipsis}}</div>
+            <div class="listSmallTitle">
+              {{ item.dynamicContent | ellipsis }}
+            </div>
           </div>
         </div>
 
-        <div class="listTime">{{ cutTime(item.dynamicTime) }}</div>
+        <div class="listTime">
+          {{ cutTime(item.dynamicTime) }}
+        </div>
       </div>
 
       <div class="pagination">
@@ -69,7 +82,7 @@ export default {
     ellipsis (value) {
       if (!value) return ''
       if (value.length > 60) {
-        return value.slice(0,60) + '...'
+        return value.slice(0, 60) + '...'
       }
       return value
     }
@@ -80,7 +93,7 @@ export default {
       curPage: 1,
       limit: 5,
       page: 0,
-      bannerList: [],
+      bannerList: []
     }
   },
   components: {
@@ -106,7 +119,7 @@ export default {
         page: this.curPage,
         limit: this.limit
       }
-      const res = await http.get('/api-generator/website/dynamic/list', {params:model})
+      const res = await http.get('/api-generator/website/dynamic/list', { params: model })
       this.dtList = res.data.data
       this.page = res.data.page
     },
@@ -178,7 +191,6 @@ export default {
   display: flex;
   justify-content: flex-end;
 }
-
 
 .banner-1 {
   // background-color: #f3f3f3;

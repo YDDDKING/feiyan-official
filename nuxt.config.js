@@ -13,7 +13,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: "keywords", content: "飞燕数学,初中,数学,凤腾阁,数学辅导,数学工具,教育,刷题,考试,数学考试,测试,做题" },
+      { name: 'keywords', content: '飞燕数学,初中,数学,凤腾阁,数学辅导,数学工具,教育,刷题,考试,数学考试,测试,做题' },
       { hid: 'description', name: 'description', content: '飞燕数学是一款集智能派卷、自动批改、互动讲解、个性测评等功能为一体的新型交互式数学学习工具' },
       { 'http-equiv': 'X-UA-Compatible', content: 'IE=Edge,chrome=1' }
     ],
@@ -21,14 +21,14 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: `https://api.map.baidu.com/api?v=2.0&ak=qe0TkeKulWIs0yc7rM69N7UX5zivQK06`, body: true },
+      { src: 'https://api.map.baidu.com/api?v=2.0&ak=qe0TkeKulWIs0yc7rM69N7UX5zivQK06', body: true }
     ]
   },
   server: {
     port: 8081, // default: 3000
-    host: '127.0.0.1' // default: localhost
+    host: '0.0.0.0' // default: localhost
     // port: 3001,
-    // host: '10.10.100.255'
+    // host: '10.10.10.'
   },
 
   router: {
@@ -47,21 +47,21 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: "~plugins/map.js", ssr: false },
+    { src: '~plugins/map.js', ssr: false },
     { src: '@/plugins/poly' }
   ],
   /*
   ** Nuxt.js dev-modules
   */
   buildModules: [
-    '@nuxtjs/vuetify',
+    '@nuxtjs/vuetify'
   ],
   /*
   ** Nuxt.js modules
   */
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
   /*
   ** Axios module configuration
@@ -73,12 +73,12 @@ module.exports = {
   //   credentials: true // 表示跨域请求时是否需要使用凭证
   // },
   // proxy: {
-  //   '/api': { 
+  //   '/api': {
   //     target: 'https://www.feiyanmath.com', // 目标接口域名
   //     pathRewrite: {
   //       '^/api': '/', // 把 /api 替换成 /
   //       changeOrigin: true // 表示是否跨域
-  //     }    
+  //     }
   //   }
   // },
   /*
@@ -111,7 +111,6 @@ module.exports = {
     */
     extend (config, ctx) {
     },
-    
     vendor: ['axios'] // 为防止重复打包
   }
 }

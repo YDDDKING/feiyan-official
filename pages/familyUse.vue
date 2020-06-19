@@ -12,9 +12,15 @@
             </div>
           </div>
           <div class="familyUseOneRightContent">
-            <div style='margin-bottom:10px'>每道精选题目皆配套名师拆解的步骤小问</div>
-            <div style='margin-bottom:10px'>使用智能交互的方式引导学生自主思考解题逻辑</div>
-            <div style='margin-bottom:10px'>精准分析学生的强弱项，推送个性化定制习题，使学生得到高效提升</div>
+            <div style="margin-bottom:10px">
+              每道精选题目皆配套名师拆解的步骤小问
+            </div>
+            <div style="margin-bottom:10px">
+              使用智能交互的方式引导学生自主思考解题逻辑
+            </div>
+            <div style="margin-bottom:10px">
+              精准分析学生的强弱项，推送个性化定制习题，使学生得到高效提升
+            </div>
           </div>
         </div>
       </div>
@@ -24,23 +30,39 @@
       <div class="familyUseTwoContent">
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop"><img src="../assets/icon1.png"/></div>
-          <div class="familyUseTwoContentIconTitle">交互讲解</div>
-          <div class="familyUseTwoContentIconSmallTitle">答案拆分，步骤引导</div>
+          <div class="familyUseTwoContentIconTitle">
+            交互讲解
+          </div>
+          <div class="familyUseTwoContentIconSmallTitle">
+            答案拆分，步骤引导
+          </div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#9b7afc"><img src="../assets/icon2.png"/></div>
-          <div class="familyUseTwoContentIconTitle">类题绑定</div>
-          <div class="familyUseTwoContentIconSmallTitle">启发思考，举一反三</div>
+          <div class="familyUseTwoContentIconTitle">
+            类题绑定
+          </div>
+          <div class="familyUseTwoContentIconSmallTitle">
+            启发思考，举一反三
+          </div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#fc7aa3"><img src="../assets/icon3.png"/></div>
-          <div class="familyUseTwoContentIconTitle">错题归纳</div>
-          <div class="familyUseTwoContentIconSmallTitle">复盘学习，温故知新</div>
+          <div class="familyUseTwoContentIconTitle">
+            错题归纳
+          </div>
+          <div class="familyUseTwoContentIconSmallTitle">
+            复盘学习，温故知新
+          </div>
         </div>
         <div class="familyUseTwoContentIcon">
           <div class="familyUseTwoContentIconTop" style="background:#ffb129"><img src="../assets/icon4.png"/></div>
-          <div class="familyUseTwoContentIconTitle">个性测评</div>
-          <div class="familyUseTwoContentIconSmallTitle">智能定级，高效训练</div>
+          <div class="familyUseTwoContentIconTitle">
+            个性测评
+          </div>
+          <div class="familyUseTwoContentIconSmallTitle">
+            智能定级，高效训练
+          </div>
         </div>
       </div>
     </div>
@@ -49,13 +71,19 @@
       <div class="familyUseThreeContent">
         <div class="familyUseThreeContentTop">
           <div class="familyUseThreeContentTopOne"></div>
-          <div class="familyUseThreeContentTopTwo">高效数学学习工具</div>
+          <div class="familyUseThreeContentTopTwo">
+            高效数学学习工具
+          </div>
           <!-- <div class="familyUseThreeContentTopThree">EFFICIENT</div> -->
         </div>
 
         <div class="familyUseThreeContentBottom">
           <div class="familyUseThreeContentBottomOne">
-            <div class="familyUseThreeContentBottomOneTitle"><div><img src="../assets/familyUse3.png"/></div>交互讲解，启发思考</div>
+            <div class="familyUseThreeContentBottomOneTitle"><div>
+              <img src="../assets/familyUse3.png" />
+            </div>
+              交互讲解，启发思考
+            </div>
             <v-carousel hide-delimiters height="260px" style="border-radius:20px;border: 1px solid rgba(34, 53, 160, 1);">
              <v-carousel-item
                 v-for="(item,i) in items"
@@ -67,21 +95,21 @@
             </v-carousel>
           </div>
 
-          <div style="text-align:center;margin:20px 0px;"><img src="../assets/familyUse2.png"/></div>
+          <div style="text-align:center;margin:20px 0px;"><img src="../assets/familyUse2.png" /></div>
 
           <div class="familyUseThreeContentBottomTwo">
-            <div class="familyUseThreeContentBottomTwoTitle"><div><img src="../assets/familyUse3.png"/></div>掌握思路，同类尝试</div>
+            <div class="familyUseThreeContentBottomTwoTitle"><div><img src="../assets/familyUse3.png" /></div>掌握思路，同类尝试</div>
 
             <div>
-              <img src="../assets/familyCutPic/家庭页_原题+试一试.png" width="100%"/>
+              <img src="../assets/familyCutPic/家庭页_原题+试一试.png" width="100%" />
             </div>
           </div>
 
-          <div style="text-align:center;margin:20px 0px;"><img src="../assets/familyUse2.png"/></div>
+          <div style="text-align:center;margin:20px 0px;"><img src="../assets/familyUse2.png" /></div>
 
           <div class="familyUseThreeContentBottomThree">
             <div class="familyUseThreeContentBottomThreeTitle">
-              <img src="../assets/familyUse3.png"/>
+              <img src="../assets/familyUse3.png" />
               归纳错题，温故知新
             </div>
 
@@ -95,15 +123,25 @@
       <div class="familyUseForthContent">
         <div class="familyUseForthContentTop">
           <div class="familyUseForthContentTopOne"></div>
-          <div class="familyUseForthContentTopTwo">智能测评</div>
-          <div class="familyUseForthContentTopThree" ></div>
+          <div class="familyUseForthContentTopTwo">
+            智能测评
+          </div>
+          <div class="familyUseForthContentTopThree"></div>
         </div>
 
         <div class="familyUseForthContentBottom">
-          <div><img src="../assets/familyCutPic/整体.svg"/></div>
-          <div style="position:absolute;top:55px;left:161px">选择题目</div>
-          <div style="position:absolute;top:55px;left:548px">生成测评卷</div>
-          <div style="position:absolute;top:55px;left:979px">测评报告</div>
+          <div>
+            <img src="../assets/familyCutPic/整体.svg"/>
+          </div>
+          <div style="position:absolute;top:55px;left:161px">
+            选择题目
+          </div>
+          <div style="position:absolute;top:55px;left:548px">
+            生成测评卷
+          </div>
+          <div style="position:absolute;top:55px;left:979px">
+            测评报告
+          </div>
         </div>
       </div>
     </div>
@@ -116,27 +154,27 @@ export default {
     return {
       items: [
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/236f0d59e0d5464f93802200fd61e2e4.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/236f0d59e0d5464f93802200fd61e2e4.png'
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/097dd9c7ea0f41e8b2870a6bdd890095.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/097dd9c7ea0f41e8b2870a6bdd890095.png'
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/1a453f9b8d11430b817990e9bf6a45c4.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/1a453f9b8d11430b817990e9bf6a45c4.png'
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/e479a05a263a40b6bf88575262097fd8.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/e479a05a263a40b6bf88575262097fd8.png'
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/16ab07d58f254c6e9b11bf44a8649a90.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/16ab07d58f254c6e9b11bf44a8649a90.png'
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/49d2138cd7844d3684167d24b2ecc596.png',
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/49d2138cd7844d3684167d24b2ecc596.png'
         },
         {
-          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/57be2757a5324454bad82bb73d99218b.png',
-        },
-      ],
+          src: 'https://feiyan-img.oss-cn-shenzhen.aliyuncs.com/57be2757a5324454bad82bb73d99218b.png'
+        }
+      ]
     }
   }
 }
@@ -169,7 +207,7 @@ export default {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
       .familyUseOneRight {
       z-index: 5;
       margin-top: 10px;
@@ -219,8 +257,6 @@ export default {
         margin-top: 30px;
       }
     }
-    
-   
   }
 }
 
@@ -310,15 +346,13 @@ export default {
         color:rgba(255, 255, 255, 0.3);
       }
     }
-
-
     .familyUseThreeContentBottom {
       width: 100%;
       margin-top: 20px;
       position: relative;
 
       .familyUseThreeContentBottomOne {
-        
+
         .familyUseThreeContentBottomOneTitle {
           display: flex;
           width: 300px;
