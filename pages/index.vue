@@ -256,7 +256,9 @@ export default {
     width:600px;
     display: flex;
     flex-direction: column;
-    padding-top:354px;
+    padding-top:350px;
+    align-items: center;
+
     // .indexOneTitleOne {
     //   font-family: PMZD;
     //   font-size: 40px;
@@ -266,7 +268,7 @@ export default {
     .indexOneTitleTwo {
       font-size: 24px;
       color:#fff;
-      margin:10px 0px 40px;
+      margin:15px 0px 40px;
     }
 
     .indexOneTitleBtn {
