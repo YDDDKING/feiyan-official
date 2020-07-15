@@ -33,7 +33,7 @@
           <img src="../assets/icon／location.png" />
         </div>
         <div class="contactName">
-          广州市凤腾阁科技有限公司
+          广州凤腾阁科技有限公司
         </div>
         <div class="contactMsg">
           <div style="margin-bottom:10px">
