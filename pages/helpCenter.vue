@@ -33,7 +33,7 @@
           <teacherHelp/>
 
           <div>
-            <v-btn small color="#7bca63" style="color:#fff;border-radius:5px" @click="openHelp">
+            <v-btn small color="#7bca63" style="color:#fff;border-radius:5px" :disabled="true" @click="openHelp">
               学生操作指南<v-icon right>mdi-chevron-right</v-icon>
             </v-btn>
           </div>

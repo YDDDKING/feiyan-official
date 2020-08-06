@@ -133,8 +133,8 @@
           <div>
             <img src="../assets/familyCutPic/整体.svg"/>
           </div>
-          <div style="position:absolute;top:55px;left:161px">
-            选择题目
+          <div style="position:absolute;top:55px;left:142px">
+            选择知识点
           </div>
           <div style="position:absolute;top:55px;left:548px">
             生成测评卷
