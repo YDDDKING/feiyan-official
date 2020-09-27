@@ -56,8 +56,8 @@
         <div class="schoolUseThreeContentBottom">
           <div class="schoolUseThreeContentBottomItem">
             <div class="schoolUseThreeContentBottomItemTop">
-              <img src="../assets/schoolCutPic/校园_智能组卷.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-9px" @click="showHelpPicOne = true"/>
-              <img src="../assets/schoolCutPic/校园_智能组卷-大.svg" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicOne" @click="showHelpPicOne = false"/>
+              <img src="../assets/schoolCutPic/校园_智能组卷.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-50px" @click="showHelpPicOne = true"/>
+              <img src="../assets/schoolCutPic/校园_智能组卷-大.png" style="border-radius:20px;position:absolute;top:-268px;left:-24px;cursor:pointer" v-if="showHelpPicOne" @click="showHelpPicOne = false"/>
             </div>
             <div class="schoolUseThreeContentBottomItemTitle">智能组卷</div>
             <div class="schoolUseThreeContentBottomItemGang"></div>
@@ -65,8 +65,8 @@
 
           <div class="schoolUseThreeContentBottomItemTwo">
             <div class="schoolUseThreeContentBottomItemTop">
-              <img src="../assets/schoolCutPic/校园_布置作业.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-9px"  @click="showHelpPicTwo = true"/>
-              <img src="../assets/schoolCutPic/校园_布置作业-大.png" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicTwo" @click="showHelpPicTwo = false"/>
+              <img src="../assets/schoolCutPic/校园_布置作业.svg" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-50px"  @click="showHelpPicTwo = true"/>
+              <img src="../assets/schoolCutPic/校园_布置作业-大.svg" style="border-radius:20px;position:absolute;top:-268px;left:-24px;cursor:pointer" v-if="showHelpPicTwo" @click="showHelpPicTwo = false"/>
             </div>
             <div class="schoolUseThreeContentBottomItemTitle">布置作业</div>
             <div class="schoolUseThreeContentBottomItemGang"></div>
@@ -74,8 +74,8 @@
 
           <div class="schoolUseThreeContentBottomItemThree">
             <div class="schoolUseThreeContentBottomItemTop">
-              <img src="../assets/schoolCutPic/校园_学生统计.png" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-9px"  @click="showHelpPicThree = true"/>
-              <img src="../assets/schoolCutPic/校园_学生统计-大.png" style="border-radius:20px;position:absolute;top:-238px;left:-24px;cursor:pointer" v-if="showHelpPicThree" @click="showHelpPicThree = false"/>
+              <img src="../assets/schoolCutPic/校园_学生统计.svg" style="border-radius:20px;cursor:pointer;position:absolute;left:-20px;top:-50px"  @click="showHelpPicThree = true"/>
+              <img src="../assets/schoolCutPic/校园_学生统计-大.svg" style="border-radius:20px;position:absolute;top:-268px;left:-24px;cursor:pointer" v-if="showHelpPicThree" @click="showHelpPicThree = false"/>
             </div>
             <div class="schoolUseThreeContentBottomItemTitle">学生统计</div>
             <div class="schoolUseThreeContentBottomItemGang"></div>
@@ -255,7 +255,7 @@ export default {
 }
 
 .schoolUseThree {
-  height: 800px;
+  height: 920px;
   width: 100%;
   background: #409eff;
   display: flex;
@@ -270,7 +270,7 @@ export default {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 90px;
+      margin-top: 168px;
 
       .schoolUseThreeContentTopOne {
         width:20px;
@@ -300,9 +300,9 @@ export default {
 
       .schoolUseThreeContentBottomItem,.schoolUseThreeContentBottomItemTwo,.schoolUseThreeContentBottomItemThree {
         height: 290px;
-        width: 390px;
+        width: 320px;
         border-radius: 10px;
-        background: url('../assets/schoolUse2.png');
+        background: url('../assets/schoolUse2.png') no-repeat;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -310,19 +310,19 @@ export default {
         position: relative;
 
         .schoolUseThreeContentBottomItemTop {
-          width: 390px;
+          width: 320px;
           height: 228px;
           background: #fff;
           border-radius: 10px;
 
           position: absolute;
           left: 0px;
-          top: -53px;
+          top: -81px;
         }
 
         .schoolUseThreeContentBottomItemTitle {
           color: #fff;
-          font-size: 32px;
+          font-size: 28px;
           margin-bottom: 20px;
         }
 
@@ -337,14 +337,14 @@ export default {
 
       .schoolUseThreeContentBottomItemTwo {
         height: 290px;
-        width: 390px;
+        width: 320px;
         border-radius: 10px;
         background: url('../assets/schoolUse3.png');
       }
 
       .schoolUseThreeContentBottomItemThree {
         height: 290px;
-        width: 390px;
+        width: 320px;
         border-radius: 10px;
         background: url('../assets/schoolUse4.png');
       }

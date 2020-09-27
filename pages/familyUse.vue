@@ -131,7 +131,7 @@
 
         <div class="familyUseForthContentBottom">
           <div>
-            <img src="../assets/familyCutPic/整体.svg"/>
+            <img src="../assets/familyCutPic/整体.png"/>
           </div>
           <div style="position:absolute;top:55px;left:142px">
             选择知识点

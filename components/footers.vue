@@ -59,7 +59,7 @@ export default {
       if (state === 1) {
         window.open('http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44011102002666')
       } else if (state === 2) {
-        window.open('http://www.beian.miit.gov.cn/')
+        window.open('http://beian.miit.gov.cn/')
       } else if (state === 3) {
         // window.open('http://www.feiyanmath.com/tos')
         this.$router.push({ name: 'tos' })
